@@ -1,1 +1,118 @@
-Hello World
+<!DOCTYPE html>
+<html LANG="ja">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>nnsnodnb's Portfolio Site</title>
+
+	<link rel="stylesheet" type="text/css" href="fullPage.js/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheet/headerdesigh.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet/font.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" >
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="fullPage.js/vendors/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="fullPage.js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="javascript/scroll.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['#94FF90', '#7DC9E5', '#F9B26A'],
+				scrollBar: true
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<!-- Static NavBar -->
+<nav class="navbar-default navbar-fixed-top">
+	<div class="container">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    	<span class="icon-bar"></span>
+	  	</button>
+	    <a class="navbar-brand" href="#">nnsnodnb's Portfolio</a>
+	  </div>
+	  <div id="navbar" class="navbar-collapse collapse">
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="#firstPage">About me</a></li>
+	      <li><a href="#secondPage">Products</a></li>
+	      <li><a href="#3rdPage">Contact</a></li>
+	    </ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+<div id="fullpage">
+	<div class="section" id="section0">
+
+		<div class="intro">
+			<h1>First Page</h1>
+			<p></p>
+		</div>
+	</div>
+
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1">
+			<div class="intro">
+				<h1>Second Page</h1>
+				<p>
+					Products
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2">
+			<h1>Product 1</h1>
+		</div>
+
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Third Page</h1>
+			<p>
+				Contact
+			</p>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
