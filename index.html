@@ -5,30 +5,41 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>nnsnodnb's Portfolio Site</title>
-	<link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon" />
-	<link rel="stylesheet" type="text/css" href="fullPage.js/jquery.fullPage.css" />
+	<link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+	<link rel="stylesheet" type="text/css" href="fullPage.js/jquery.fullPage.css">
 	<link rel="stylesheet" type="text/css" href="stylesheet/headerdesigh.css">
 	<link rel="stylesheet" type="text/css" href="stylesheet/font.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" >
-	<style>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-	/* Style for our header texts
-	* --------------------------------------- */
-	h1{
-		font-size: 5em;
-		color: #fff;
-		margin:0;
-	}
-	.intro p{
-		color: #fff;
-	}
-
-	/* Centered texts in each section
-	* --------------------------------------- */
-	.section{
-		text-align:center;
-	}
-
+	<style type="text/css">
+		h1{
+			font-size: 5em;
+			color: #fff;
+			margin:0;
+		}
+		.intro p{
+			font-size: 1.5em;
+			color: #fff;
+		}
+		h3{
+			font-size: 3em;
+			color: #fff;
+			margin:0;
+		}
+		.col-sm-6 p{
+			color: #fff;
+		}
+		.copyright {
+			font-size: 1.5em;
+			color: #fff;
+		}
+		.section {
+			text-align:center;
+		}
+		.description {
+			font-size: 1.5em;
+		}
 	</style>
 
 	<!--[if IE]>
@@ -39,11 +50,11 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
 	<script type="text/javascript" src="fullPage.js/vendors/jquery.slimscroll.min.js"></script>
 	<script type="text/javascript" src="fullPage.js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="javascript/scroll.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
@@ -67,11 +78,11 @@
 	      <span class="icon-bar"></span>
 	    	<span class="icon-bar"></span>
 	  	</button>
-	    <a class="navbar-brand" href="https://nnsnodnb.github.io/">nnsnodnb's Portfolio</a>
+	    <a class="navbar-brand" href="#">nnsnodnb's Portfolio</a>
 	  </div>
 	  <div id="navbar" class="navbar-collapse collapse">
 	    <ul class="nav navbar-nav">
-	      <li class="active"><a href="#firstPage">About me</a></li>
+	      <li><a href="#firstPage">About me</a></li>
 	      <li><a href="#secondPage">Products</a></li>
 	      <li><a href="#3rdPage">Contact</a></li>
 	    </ul>
@@ -81,38 +92,76 @@
 
 <div id="fullpage">
 	<div class="section" id="section0">
-
+		<!-- First Page -->
 		<div class="intro">
-			<h1>First Page</h1>
+			<h1>About me</h1>
 			<p></p>
 		</div>
 	</div>
 
+	<!-- Second Page -->
 	<div class="section" id="section1">
-	    <div class="slide" id="slide1">
+		<!-- First Slide -->
+	  <div class="slide" id="slide1">
 			<div class="intro">
-				<h1>Second Page</h1>
+				<h1>Products</h1>
 				<p>
-					Products
+
 				</p>
 			</div>
 		</div>
-
-	    <div class="slide" id="slide2">
+		<!-- Second Slide -->
+	  <div class="slide" id="slide2">
 			<h1>Product 1</h1>
 		</div>
-
 	</div>
-	<div class="section" id="section2">
-		<div class="intro">
-			<h1>Third Page</h1>
-			<p>
-				Contact
-			</p>
+
+	<!-- Third Page -->
+	<div class="section" id="section1">
+		<!-- First Slide -->
+	  <div class="slide" id="slide1">
+			<div class="intro">
+				<h1>Contact</h1>
+				<p>
+
+				</p>
+			</div>
 		</div>
+		<!-- Slide Left -->
+	  <div class="slide" id="slide2">
+			<div class="container">
+    		<div class="row">
+					<!-- Left Slide -->
+      		<div class="col-sm-6">
+        		<h3>About Site</h3>
+	        	<p class="description">超がつくほどド素人によって作成された<br>私のポートフォリオサイトです</p>
+	      	</div>
+					<!-- Slide Right -->
+	      	<div class="col-sm-6" id="icon-webfont">
+	        	<h3>Social Links</h3>
+						<a href="https://www.facebook.com/yuya.oka.50" target="new">
+							<i class="fa fa-facebook-square fa-4x fa-fw animated-hover" style="color: #fff"></i>
+						</a>
+						<a href="https://twitter.com/nnsnodnb" target="new">
+							<i class="fa fa-twitter-square fa-4x fa-fw" style="color: #fff"></i>
+						</a>
+						<a href="https://github.com/nnsnodnb" target="new">
+							<i class="fa fa-github-square fa-4x fa-fw" style="color: #fff"></i>
+						</a>
+						<a href="http://www.slideshare.net/yuyaoka50" target="new">
+							<i class="fa fa-slideshare fa-4x fa-fw" style="color: #fff"></i>
+						</a>
+					</div>
+				</div>
+				<footer class="footer">
+					<div class="container">
+						<p class="text-muted copyright">&copy; 2015 nnsnodnb</p>
+					</div>
+				</footer>
+			</div>
+  	</div>
 	</div>
 </div>
-
 
 </body>
 </html>
