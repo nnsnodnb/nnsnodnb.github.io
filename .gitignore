@@ -1,2 +1,7 @@
 .DS_Store
 bower_components/
+bootstrap/fonts/
+fullPage.js/examples/
+fullPage.js/pure javascript (Alpha)/
+fullPage.js/bower.json
+fullPage.js/package.json
