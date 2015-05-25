@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html LANG="ja">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>nnsnodnb's Portfolio Site</title>
+	<link rel="icon" href="../images/favicon.ico" type="../image/vnd.microsoft.icon">
+	<link rel="stylesheet" type="text/css" href="../fullPage.js/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheet/headerdesigh.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheet/font.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css"> -->
+	<link rel="stylesheet" type="text/css" href="../honoka/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../honoka/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		h1{
+			font-size: 5em;
+			color: #fff;
+			margin:0;
+		}
+		.intro p{
+			font-size: 1.5em;
+			color: #fff;
+		}
+		.releases{
+			font-size: 1.5em;
+		}
+		h3{
+			font-size: 3em;
+			color: #fff;
+			margin:0;
+		}
+		.col-sm-6 p{
+			color: #fff;
+		}
+		.copyright {
+			font-size: 1.5em;
+			color: #fff;
+		}
+		.section {
+			text-align:center;
+		}
+		.description {
+			font-size: 1.5em;
+		}
+		.radius-img{
+			backgroud: #ccc;
+			border: solid 1px #000;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			width: 100%;
+		}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../fullPage.js/vendors/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="../fullPage.js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="../javascript/scroll.js"></script>
+	<!-- <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> -->
+	<script type="text/javascript" src="../honoka/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['#94FF90', '#7DC9E5', '#F9B26A'],
+				scrollBar: true
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<!-- Static NavBar -->
+<nav class="navbar-default navbar-fixed-top">
+	<div class="container">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    	<span class="icon-bar"></span>
+	  	</button>
+	    <a class="navbar-brand" href="#">nnsnodnb.com</a>
+	  </div>
+	  <div id="navbar" class="navbar-collapse collapse">
+	    <ul class="nav navbar-nav">
+	      <li><a href="#firstPage">About me</a></li>
+	      <li><a href="#secondPage">Products</a></li>
+	      <li><a href="#3rdPage">Contact</a></li>
+	    </ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="https://twitter.com/share?url=https://nnsnodnb.com/&text=nnsnodnb's Portfolio Site" target="new">Tweet</a>
+					<script>
+						!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+					</script>
+				</li>
+        <li>
+					<a href="english-portfolio.html">
+						<button type="button" class="btn btn-lg btn-primary btn-xs">&nbsp;&nbsp;English&nbsp;&nbsp;</button></li>
+					</a>
+				</li>
+      </ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+<div id="fullpage">
+	<div class="section" id="section0">
+		<!-- First Page -->
+		<div class="intro">
+			<h1>About me</h1>
+			<p></p>
+		</div>
+	</div>
+
+	<!-- Second Page -->
+	<div class="section" id="section1">
+		<!-- First Slide -->
+	  <div class="slide" id="slide1">
+			<div class="intro">
+				<h1>Products</h1>
+				<p>
+					<a href="#secondPage/1" style="color: #fff;">Prog_Shooting</a>
+				</p>
+			</div>
+		</div>
+		<!-- Second Slide -->
+	  <div class="slide" id="slide2">
+			<h1>Unity Project</h1><br>
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-4">
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<h3 class="panel-title">Prog_Shooting
+									<a href="https://github.com/nnsnodnb/Prog_Shooting" target="new" style="color: #fff;">
+										<i class="fa fa-github-square fa-fw" style="color: #5DA6EB; font-size: 1.3em"></i>
+									</a>
+								</h3>
+							</div>
+						<div class="panel-body">
+							<p>
+								Unityで作成した，いわばシューティングゲームです．
+							</p>
+							<div class="well">
+								<img class="radius-img" src="../images/ps_sample.png" alt="Game Sample" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<p class="description">
+						<br>
+						JavaScriptを使って作成しました
+					</p>
+					<p>
+
+						<iframe src="http://ghbtns.com/github-btn.html?user=nnsnodnb&repo=Prog_Shooting&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+						<iframe src="http://ghbtns.com/github-btn.html?user=nnsnodnb&repo=Prog_Shooting&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+					</p>
+					<hr>
+					<p style="font-size: 1.1em;">授業の自由課題で作ったものです．<br>ちょっとひどい有様ですが，一応完成形です．<br>もしよかったら遊んでみてください．</p>
+					<p class="releases"><a href="https://github.com/nnsnodnb/Prog_Shooting/releases" target="new">Releases Note</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="slide" id="slide3">
+
+		</div>
+	</div>
+
+	<!-- Third Page -->
+	<div class="section" id="section1">
+		<!-- First Slide -->
+	  <div class="slide" id="slide1">
+			<div class="intro">
+				<h1>Contact</h1>
+				<p>
+
+				</p>
+			</div>
+		</div>
+		<!-- Slide Left -->
+	  <div class="slide" id="slide2">
+			<div class="container">
+    		<div class="row">
+					<!-- Left Slide -->
+      		<div class="col-sm-6">
+        		<h3>About Site</h3>
+	        	<p class="description">超がつくほどド素人によって作成された<br>私のポートフォリオサイトです</p>
+	      	</div>
+					<!-- Slide Right -->
+	      	<div class="col-sm-6" id="icon-webfont">
+	        	<h3>Social Links</h3>
+						<a href="https://www.facebook.com/yuya.oka.50" target="new">
+							<i class="fa fa-facebook-square fa-4x fa-fw animated-hover" style="color: #fff"></i>
+						</a>
+						<a href="https://twitter.com/nnsnodnb" target="new">
+							<i class="fa fa-twitter-square fa-4x fa-fw" style="color: #fff"></i>
+						</a>
+						<a href="https://github.com/nnsnodnb" target="new">
+							<i class="fa fa-github-square fa-4x fa-fw" style="color: #fff"></i>
+						</a>
+						<a href="http://www.slideshare.net/yuyaoka50" target="new">
+							<i class="fa fa-slideshare fa-4x fa-fw" style="color: #fff"></i>
+						</a>
+						<a href="mailto:oka.03_05#me.com?subject=問い合わせ&amp;body=メールアドレスの#を@に変えてください">
+							<i class="fa fa-envelope-square fa-4x fa-fw" style="color: #fff"></i>
+						</a>
+					</div>
+				</div>
+				<footer class="footer">
+					<div class="container">
+						<p class="text-muted copyright">&copy; 2015 nnsnodnb</p>
+					</div>
+				</footer>
+			</div>
+  	</div>
+	</div>
+</div>
+
+</body>
+</html>
