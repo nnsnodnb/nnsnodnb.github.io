@@ -11,43 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet/font.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet/desk_application.css">
 	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-	<style type="text/css">
-		h1{
-			font-size: 5em;
-			color: #fff;
-			margin:0;
-		}
-		.intro p{
-			font-size: 1.5em;
-			color: #fff;
-		}
-		h3{
-			font-size: 3em;
-			color: #fff;
-			margin:0;
-		}
-		.col-sm-6 p{
-			color: #fff;
-		}
-		.copyright {
-			font-size: 1.5em;
-			color: #fff;
-		}
-		.section {
-			text-align:center;
-		}
-		.description {
-			font-size: 1.5em;
-		}
-		a.to-english {
-			text-decoration: none;
-		}
-		.to-english {
-			font-size: 1.5em;
-		}
-	</style>
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -55,34 +20,23 @@
 		</script>
 	<![endif]-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="fullPage.js/vendors/jquery.slimscroll.min.js"></script>
 	<script type="text/javascript" src="fullPage.js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="javascript/scroll.js"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
-  <!-- Use source -->
-	<!--<script type="text/javascript">
+	<!-- fullPage.js -->
+	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['firstPage', 'secondPage', '3rdPage'],
-				sectionsColor: ['#94FF90', '#7DC9E5', '#F9B26A'],
+				sectionsColor: ['#EEE48F'],
 				scrollBar: true
 			});
 		});
-	</script>-->
-
-  <!-- Temporary source -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        anchors: ['firstPage'],
-        sectionsColor: ['#EEE48F'],
-        scrollBar: false
-      });
-    });
-  </script>
+	</script>
 
 </head>
 <body>
@@ -97,15 +51,22 @@
 	      <span class="icon-bar"></span>
 	    	<span class="icon-bar"></span>
 	  	</button>
-	    <a class="navbar-brand" href="#">nnsnodnb's Portfolio</a>
+	    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="ロゴ" style="width: 120px;"/></a>
 	  </div>
 	  <div id="navbar" class="navbar-collapse collapse">
 	    <ul class="nav navbar-nav">
 	      <li><a href="#firstPage">About me</a></li>
 	      <li><a href="#secondPage">Products</a></li>
 	      <li><a href="#3rdPage">Contact</a></li>
+				<li><a href="http://nnsnodnb.hatenablog.jp" target="new">Blog <i class="fa fa-external-link"></i></a></li>
 	    </ul>
 			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="https://twitter.com/share?url=http://nnsnodnb.com/&text=nnsnodnb's Portfolio Site @nnsnodnb" target="new">Tweet</a>
+					<script>
+						!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+					</script>
+				</li>
         <li>
 					<a href="index.html">
 						<button type="button" class="btn btn-lg btn-primary btn-xs">Japanese</button>
@@ -115,6 +76,7 @@
 		</div><!--/.nav-collapse -->
 	</div>
 </nav>
+
 
 <div id="fullpage">
 	<div class="section" id="section0">
