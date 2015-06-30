@@ -41,14 +41,6 @@
 </head>
 <body>
 
-<!-- Redirect Smart phone's site -->
-<script type="text/javascript">
-    if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0)
-    {
-	location.href = '/sp/' ;
-    }
-</script>
-
 <div id="jump_desktop"></div>
 <!-- Static NavBar -->
 <nav class="navbar-default navbar-fixed-top">
@@ -67,6 +59,7 @@
 	      <li><a href="#firstPage">About me</a></li>
 	      <li><a href="#secondPage">Products</a></li>
 	      <li><a href="#3rdPage">Contact</a></li>
+				<li><a href="http://nnsnodnb.hatenablog.jp" target="new">Blog<i class="fa fa-external-link"></i></a></li>
 	    </ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li>
@@ -277,6 +270,14 @@
   	</div>
 	</div>
 </div>
+
+<!-- Redirect Smart phone's site -->
+<script type="text/javascript">
+    if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0)
+    {
+	location.href = '/sp/' ;
+    }
+</script>
 
 </body>
 </html>
