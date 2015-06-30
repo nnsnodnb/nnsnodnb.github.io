@@ -27,14 +27,6 @@
 	<script type="text/javascript" src="javascript/scroll.js"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
-	<!-- Redirect Smart phone's site -->
-	<script type="text/javascript">
-		if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0)
-		{
-			location.href = '/sp/' ;
-		}
-	</script>
-
 	<!-- fullPage.js -->
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -48,6 +40,14 @@
 
 </head>
 <body>
+
+<!-- Redirect Smart phone's site -->
+<script type="text/javascript">
+    if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0)
+    {
+	location.href = '/sp/' ;
+    }
+</script>
 
 <div id="jump_desktop"></div>
 <!-- Static NavBar -->
