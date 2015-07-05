@@ -1,7 +1,26 @@
 h1 {
   font-size: 5em ;
   color: #fff ;
+  margin: 0;
+}
+h4 {
+  font-size: 2.3em;
+  color: #fff;
+  margin: 30;
+}
+h3 {
+  font-size: 3em ;
+  color: #fff ;
   margin:0 ;
+}
+.aboutme a {
+  text-decoration: none;
+}
+.aboutme a:hover {
+  color: #FE9A2E;
+}
+.department b {
+  color: #585858;
 }
 .intro p {
   font-size: 1.5em ;
@@ -9,11 +28,6 @@ h1 {
 }
 .releases {
   font-size: 1.5em ;
-}
-h3 {
-  font-size: 3em ;
-  color: #fff ;
-  margin:0 ;
 }
 .col-sm-6 p {
   color: #fff ;

@@ -1,113 +1,179 @@
 <!DOCTYPE html>
 <html LANG="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="高専5年の情報系ではない学科に入ったnnsnodnbの自己紹介やプロダクトコンテンツの紹介がざっとされているポートフォリオサイトです．">
+		<title>nnsnodnb's Portfolio Site</title>
+		<link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+		<link rel="stylesheet" type="text/css" href="fullPage.js/jquery.fullPage.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet/headerdesigh.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet/font.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="stylesheet/desk_application.css">
+		<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>nnsnodnb's Portfolio Site</title>
-	<link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
-	<link rel="stylesheet" type="text/css" href="fullPage.js/jquery.fullPage.css">
-	<link rel="stylesheet" type="text/css" href="stylesheet/headerdesigh.css">
-	<link rel="stylesheet" type="text/css" href="stylesheet/font.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="stylesheet/desk_application.css">
-	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<!--[if IE]>
+			<script type="text/javascript">
+				 var console = { log: function() {} };
+			</script>
+		<![endif]-->
 
-	<!--[if IE]>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="fullPage.js/vendors/jquery.slimscroll.min.js"></script>
+		<script type="text/javascript" src="fullPage.js/jquery.fullPage.js"></script>
+		<script type="text/javascript" src="javascript/scroll.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- fullPage.js -->
 		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="fullPage.js/vendors/jquery.slimscroll.min.js"></script>
-	<script type="text/javascript" src="fullPage.js/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="javascript/scroll.js"></script>
-	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-
-	<!-- fullPage.js -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['firstPage', 'secondPage', '3rdPage'],
-				sectionsColor: ['#94FF90', '#7DC9E5', '#F9B26A'],
-				scrollBar: true
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					anchors: ['firstPage', 'secondPage', '3rdPage'],
+					sectionsColor: ['#8BE16C', '#7DC9E5', '#F9B26A'],
+					scrollBar: true
+				});
 			});
-		});
-	</script>
+		</script>
 
-</head>
-<body>
+	</head>
+	<body>
 
-<!-- Static NavBar -->
-<nav class="navbar-default navbar-fixed-top">
-	<div class="container">
-	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-	      <span class="sr-only">Toggle navigation</span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    	<span class="icon-bar"></span>
-	  	</button>
-	    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="ロゴ" style="width: 120px;"/></a>
-	  </div>
-	  <div id="navbar" class="navbar-collapse collapse">
-	    <ul class="nav navbar-nav">
-	      <li><a href="#firstPage">About me</a></li>
-	      <li><a href="#secondPage">Products</a></li>
-	      <li><a href="#3rdPage">Contact</a></li>
-				<li><a href="http://nnsnodnb.hatenablog.jp" target="new">Blog <i class="fa fa-external-link"></i></a></li>
-	    </ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li>
-					<a href="https://twitter.com/share?url=http://nnsnodnb.com/&text=nnsnodnb's Portfolio Site @nnsnodnb" target="new">Tweet</a>
-					<script>
-						!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-					</script>
-				</li>
-        <li>
-					<a href="english-portfolio.html">
-						<button type="button" class="btn btn-lg btn-primary btn-xs">&nbsp;&nbsp;English&nbsp;&nbsp;</button></li>
-					</a>
-				</li>
-      </ul>
-		</div><!--/.nav-collapse -->
-	</div>
-</nav>
-
-<div id="fullpage">
-	<div class="section" id="section0">
-		<!-- First Page -->
-		<div class="intro">
-			<h1>About me</h1>
-			<p></p>
+	<!-- Static NavBar -->
+	<nav class="navbar-default navbar-fixed-top">
+		<div class="container">
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		      <span class="sr-only">Toggle navigation</span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		    	<span class="icon-bar"></span>
+		  	</button>
+		    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="ロゴ" style="width: 120px;"/></a>
+		  </div>
+		  <div id="navbar" class="navbar-collapse collapse">
+		    <ul class="nav navbar-nav">
+		      <li><a href="#firstPage">About me</a></li>
+		      <li><a href="#secondPage">Products</a></li>
+		      <li><a href="#3rdPage">Contact</a></li>
+					<li><a href="http://nnsnodnb.hatenablog.jp" target="new">Blog <i class="fa fa-external-link"></i></a></li>
+		    </ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="https://twitter.com/share?url=http://nnsnodnb.com/&text=nnsnodnb's Portfolio Site @nnsnodnb" target="new">Tweet</a>
+						<script>
+							!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+						</script>
+					</li>
+	        <li>
+						<a href="english-portfolio.html">
+							<button type="button" class="btn btn-lg btn-primary btn-xs">&nbsp;&nbsp;English&nbsp;&nbsp;</button></li>
+						</a>
+					</li>
+	      </ul>
+			</div><!--/.nav-collapse -->
 		</div>
-	</div>
+	</nav>
 
-	<!-- Second Page -->
-	<div class="section" id="section1">
-		<!-- First Slide -->
-	  <div class="slide" id="slide1">
-			<h1>Unity Project</h1><br>
-			<div class="row">
+	<div id="fullpage">
+		<div class="section" id="section0">
+			<!-- First Page -->
+			<div class="intro"><br><br><br>
+				<div class="col-md-6">
+				  <a href="https://github.com/nnsnodnb.com" target="new">
+						<img class="img-circle" src="images/avator.jpg" alt="nnsnodnb" width="140" height="140">
+					</a>
+					<br><br>
+					<div class="aboutme">
+						<h4>Yuya Oka（<a href="https://twitter.com/nnsnodnb" target="new" class="aboutme">@nnsnodnb<i class="fa fa-twitter fa-1x"></i></a>）</h4>
+					</div>
+					<div class="department">
+					  <p>山口県のとある<b>経営・経済・商業系学科</b>に通う高専生</p>
+					</div>
+					<p>自作PCを作ったことがあったりする</p>
+					<p>入る学科を間違えたドンマイ系高専生</p>
+					<p>企業の方から仕事を頂いたり学生から依頼を貰ったりする</p>
+			  </div>
+
+				<div class="col-md-6" align="left">
+					<h4>スペック等</h4>
+					<hr>
+					<p>年齢: 19歳の5年生(平成8年3月5日生)</p>
+					<p>アニメ: <strong style="color: pink;">ラブライブ！</strong></p>
+					<p>趣味: <strong style="color: black;">黒い画面(ターミナル)</strong>を見てニヤニヤすること</p>
+					<p>OS: Mac・Windows・Linux</p>
+					<br>
+					<h4><strong>触ったことのある</strong>言語</h4>
+					<hr>
+						<p>コンパイル系: <i>C・Java</i></p>
+						<p>データベース系: <i>PostgreSQL・MySQL・sqlite</i></p>
+						<p>Web系: <i>HTML・Javascript・CSS・PHP・Ruby on Rails</i></p>
+						<p>インタプリタ系: <i>Ruby・R・Python</i></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Second Page -->
+		<div class="section" id="section1">
+			<!-- First Slide -->
+		  <div class="slide" id="slide1">
+				<h1>Unity Project</h1><br>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4">
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<h3 class="panel-title">Prog_Shooting
+									<a href="https://github.com/nnsnodnb/Prog_Shooting" target="new" style="color: #fff;">
+										<i class="fa fa-github-square fa-fw" style="color: #5DA6EB; font-size: 1.3em"></i>
+									</a>
+								</h3>
+							</div>
+							<div class="panel-body">
+								<p>
+									Unityで作成した，いわばシューティングゲームです．
+								</p>
+								<div class="well">
+									<img class="radius-img" src="images/ps_sample.png" alt="Game Sample" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<p class="description">
+							<br>
+							JavaScriptを使って作成しました
+						</p>
+						<p>
+							<iframe src="http://ghbtns.com/github-btn.html?user=nnsnodnb&repo=Prog_Shooting&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+							<iframe src="http://ghbtns.com/github-btn.html?user=nnsnodnb&repo=Prog_Shooting&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+						</p>
+						<hr>
+						<p style="font-size: 1.1em;">授業の自由課題で作ったものです．<br>ちょっとひどい有様ですが，一応完成形です．<br>もしよかったら遊んでみてください．</p>
+						<p class="releases"><a href="https://github.com/nnsnodnb/Prog_Shooting/releases" target="new">Releases Note</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="slide" id="slide3">
+				<h1>Ota Fes' Site</h1>
 				<div class="col-sm-2"></div>
 				<div class="col-sm-4">
 					<div class="panel panel-info">
 						<div class="panel-heading">
-							<h3 class="panel-title">Prog_Shooting
-								<a href="https://github.com/nnsnodnb/Prog_Shooting" target="new" style="color: #fff;">
+							<h3 class="panel-title">three3-ota
+								<a href="https://github.com/three3-ota-web/three3-ota" target="new">
 									<i class="fa fa-github-square fa-fw" style="color: #5DA6EB; font-size: 1.3em"></i>
 								</a>
 							</h3>
 						</div>
 						<div class="panel-body">
 							<p>
-								Unityで作成した，いわばシューティングゲームです．
+								友人に頼まれてWEB勉強がてら作りました．
 							</p>
 							<div class="well">
-								<img class="radius-img" src="images/ps_sample.png" alt="Game Sample" />
+								<iframe src="http://nnsnodnb.github.io/three3-ota/" width="100%" height="300px" frameborder="0" scrolling="no"></iframe>
 							</div>
 						</div>
 					</div>
@@ -115,144 +181,105 @@
 				<div class="col-sm-6">
 					<p class="description">
 						<br>
-						JavaScriptを使って作成しました
+						Use Bootstrap Theme for Japanese Ver.Umi
 					</p>
 					<p>
-						<iframe src="http://ghbtns.com/github-btn.html?user=nnsnodnb&repo=Prog_Shooting&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-						<iframe src="http://ghbtns.com/github-btn.html?user=nnsnodnb&repo=Prog_Shooting&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+						<iframe src="http://ghbtns.com/github-btn.html?user=three3-ota-web&repo=three3-ota&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+						<iframe src="http://ghbtns.com/github-btn.html?user=three3-ota-web&repo=three3-ota&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
 					</p>
 					<hr>
-					<p style="font-size: 1.1em;">授業の自由課題で作ったものです．<br>ちょっとひどい有様ですが，一応完成形です．<br>もしよかったら遊んでみてください．</p>
-					<p class="releases"><a href="https://github.com/nnsnodnb/Prog_Shooting/releases" target="new">Releases Note</a></p>
+					<p style="font-size: 1.1em">とある高校の文化祭で使用するHPです<br><br>基本的にコンテンツがいらないようなので<br>この程度の作品レベルで十分ということ</p>
+					<p class="releases"><a href="https://nkmr6194.github.io/Umi/" target="new">Bootstrap Theme for Japanese Ver.Umi</a></p>
+					<p class="releases"><a href="https://three3-ota.herokuap.com" target="new">Web Site</a></p>
 				</div>
 			</div>
-		</div>
-		<div class="slide" id="slide3">
-			<h1>Ota Fes' Site</h1>
-			<div class="col-sm-2"></div>
-			<div class="col-sm-4">
-				<br>
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<h3 class="panel-title">three3-ota
-							<a href="https://github.com/three3-ota-web/three3-ota" target="new">
-								<i class="fa fa-github-square fa-fw" style="color: #5DA6EB; font-size: 1.3em"></i>
-							</a>
-						</h3>
-					</div>
-					<div class="panel-body">
-						<p>
-							友人に頼まれてWEB勉強がてら作りました．
-						</p>
-						<div class="well">
-							<iframe src="http://nnsnodnb.github.io/three3-ota/" width="100%" height="300px" frameborder="0" scrolling="no"></iframe>
+			<div class="slide" id="slide4">
+				<h1>Pitches Counter</h1>
+				<div class="col-sm-2"></div>
+				<div class="col-sm-4">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Pitcher_Counter
+								<a href="https://github.com/nnsnodnb/Pitcher_Counter" target="new">
+									<i class="fa fa-github-square fa-fw" style="color: #5DA6EB; font-size: 1.3em"></i>
+								</a>
+							</h3>
+						</div>
+						<div class="panel-body">
+							<p>
+								先生が使いたいというので作りました
+							</p>
+							<div class="well">
+								<img src="images/pc_ios_sample.png" alt="Pitcher_Counter" style="width: 100%; height: 100%"/>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-sm-6">
-				<p class="description">
-					<br>
-					Use Bootstrap Theme for Japanese Ver.Umi
-				</p>
-				<p>
-					<iframe src="http://ghbtns.com/github-btn.html?user=three3-ota-web&repo=three3-ota&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-					<iframe src="http://ghbtns.com/github-btn.html?user=three3-ota-web&repo=three3-ota&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-				</p>
-				<hr>
-				<p style="font-size: 1.1em">とある高校の文化祭で使用するHPです<br><br>基本的にコンテンツがいらないようなので<br>この程度の作品レベルで十分ということ</p>
-				<p class="releases"><a href="https://nkmr6194.github.io/Umi/" target="new">Bootstrap Theme for Japanese Ver.Umi</a></p>
-				<p class="releases"><a href="https://three3-ota.herokuap.com" target="new">Web Site</a></p>
-			</div>
-		</div>
-		<div class="slide" id="slide4">
-			<h1>Pitches Counter</h1>
-			<div class="col-sm-2"></div>
-			<div class="col-sm-4">
-				<br>
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<h3 class="panel-title">Pitcher_Counter
-							<a href="https://github.com/nnsnodnb/Pitcher_Counter" target="new">
-								<i class="fa fa-github-square fa-fw" style="color: #5DA6EB; font-size: 1.3em"></i>
-							</a>
-						</h3>
-					</div>
-					<div class="panel-body">
-						<p>
-							先生が使いたいというので作りました
-						</p>
-						<div class="well">
-							<img src="images/pc_ios_sample.png" alt="Pitcher_Counter" style="width: 100%; height: 100%"/>
-						</div>
-					</div>
+				<div class="col-sm-6">
+					<p class="description">
+						<br>
+						Swiftの勉強がてら作りました
+					</p>
+					<p>
+						<iframe src="http://ghbtns.com/github-btn.html?user=nnsnodnb&repo=Pitcher_Counter&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+						<iframe src="http://ghbtns.com/github-btn.html?user=nnsnodnb&repo=Pitcher_Counter&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+					</p>
+					<hr>
+					<p style="font-size: 1.1em">高校野球の投手が何球投げたのをチェックして分析したい(?)<br>ということで作成しました<br>iOS Developerが期限切れしたので実機でのテストはしてません</p>
+					<p class="releases"><a href="https://github.com/nnsnodnb/Pitcher_Counter/releases" target="new"><s>Releases Note</s></a></p>
+					<p class="releases"><a href="http://nnsnodnb.hatenablog.jp/entry/ios_pitcher_counter" target="new">Blog Article</a></p>
 				</div>
 			</div>
-			<div class="col-sm-6">
-				<p class="description">
-					<br>
-					Swiftの勉強がてら作りました
-				</p>
-				<p>
-					<iframe src="http://ghbtns.com/github-btn.html?user=nnsnodnb&repo=Pitcher_Counter&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-					<iframe src="http://ghbtns.com/github-btn.html?user=nnsnodnb&repo=Pitcher_Counter&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-				</p>
-				<hr>
-				<p style="font-size: 1.1em">高校野球の投手が何球投げたのをチェックして分析したい(?)<br>ということで作成しました<br>iOS Developerが期限切れしたので実機でのテストはしてません</p>
-				<p class="releases"><a href="https://github.com/nnsnodnb/Pitcher_Counter/releases" target="new"><s>Releases Note</s></a></p>
-				<p class="releases"><a href="http://nnsnodnb.hatenablog.jp/entry/ios_pitcher_counter">Blog Article</a></p>
 			</div>
-		</div>
-		</div>
 
-	<!-- Third Page -->
-	<div class="section" id="section1">
-		<!-- First Slide -->
-	  <div class="slide" id="slide1">
-			<div class="container">
-    		<div class="row">
-					<!-- Left Slide -->
-      		<div class="col-sm-6">
-        		<h3>About Site</h3>
-	        	<p class="description">超がつくほどド素人によって作成された<br>私のポートフォリオサイトです</p>
-	      	</div>
-					<!-- Slide Right -->
-	      	<div class="col-sm-6" id="icon-webfont">
-	        	<h3>Social Links</h3>
-						<a href="https://www.facebook.com/yuya.oka.50" target="new">
-							<i class="fa fa-facebook-square fa-4x fa-fw animated-hover" style="color: #fff"></i>
-						</a>
-						<a href="https://twitter.com/nnsnodnb" target="new">
-							<i class="fa fa-twitter-square fa-4x fa-fw" style="color: #fff"></i>
-						</a>
-						<a href="https://github.com/nnsnodnb" target="new">
-							<i class="fa fa-github-square fa-4x fa-fw" style="color: #fff"></i>
-						</a>
-						<a href="http://www.slideshare.net/yuyaoka50" target="new">
-							<i class="fa fa-slideshare fa-4x fa-fw" style="color: #fff"></i>
-						</a>
-						<a href="mailto:oka.03_05#me.com?subject=問い合わせ&amp;body=メールアドレスの#を@に変えてください">
-							<i class="fa fa-envelope-square fa-4x fa-fw" style="color: #fff"></i>
-						</a>
+		<!-- Third Page -->
+		<div class="section" id="section1">
+			<!-- First Slide -->
+		  <div class="slide" id="slide1">
+				<div class="container">
+	    		<div class="row">
+						<!-- Left Slide -->
+	      		<div class="col-sm-6">
+	        		<h3>About Site</h3>
+		        	<p class="description">超がつくほどド素人によって作成された<br>私のポートフォリオサイトです<br><br>ソースコードがグチャグチャでございます</p>
+		      	</div>
+						<!-- Slide Right -->
+		      	<div class="col-sm-6" id="icon-webfont">
+		        	<h3>Social Links</h3>
+							<a href="https://www.facebook.com/yuya.oka.50" target="new">
+								<i class="fa fa-facebook-square fa-4x fa-fw animated-hover" style="color: #fff"></i>
+							</a>
+							<a href="https://twitter.com/nnsnodnb" target="new">
+								<i class="fa fa-twitter-square fa-4x fa-fw" style="color: #fff"></i>
+							</a>
+							<a href="https://github.com/nnsnodnb" target="new">
+								<i class="fa fa-github-square fa-4x fa-fw" style="color: #fff"></i>
+							</a>
+							<a href="http://www.slideshare.net/yuyaoka50" target="new">
+								<i class="fa fa-slideshare fa-4x fa-fw" style="color: #fff"></i>
+							</a>
+							<a href="mailto:oka.03_05#me.com?subject=問い合わせ&amp;body=メールアドレスの#を@に変えてください">
+								<i class="fa fa-envelope-square fa-4x fa-fw" style="color: #fff"></i>
+							</a>
+						</div>
 					</div>
+					<footer class="footer">
+						<div class="container">
+							<p class="text-muted copyright">&copy; 2015 nnsnodnb</p>
+						</div>
+					</footer>
 				</div>
-				<footer class="footer">
-					<div class="container">
-						<p class="text-muted copyright">&copy; 2015 nnsnodnb</p>
-					</div>
-				</footer>
-			</div>
-  	</div>
+	  	</div>
+		</div>
 	</div>
-</div>
 
-<!-- Redirect Smart phone's site -->
-<script type="text/javascript">
-    if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0)
-    {
-	location.href = '/sp/' ;
-    }
-</script>
+	<!-- Redirect Smart phone's site -->
+	<script type="text/javascript">
+	    if ((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0)
+	    {
+		location.href = '/sp/' ;
+	    }
+	</script>
 
-</body>
+	</body>
 </html>
