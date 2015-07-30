@@ -60,6 +60,10 @@ h5 {
   font-size: 0.6em ;
 }
 
+.xs-size-modal {
+  font-size: 0.5em;
+}
+
 .xs-dl {
   font-size: 1.7em ;
   text-align: left ;
