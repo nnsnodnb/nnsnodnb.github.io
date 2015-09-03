@@ -82,6 +82,6 @@ h5 {
   color: #fff ;
 }
 
-.cursor {
-  cursor: url(images/cursor.ani) ;
+body {
+  cursor: url(images/cursor.ani) , auto ;
 }
