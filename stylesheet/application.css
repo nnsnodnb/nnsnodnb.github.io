@@ -81,3 +81,7 @@ h5 {
 .div-xs {
   color: #fff ;
 }
+
+.cursor {
+  cursor: url(images/cursor.ani) ;
+}
