@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html LANG="ja">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>お問い合わせ｜nnsnodnb's Portfolio Site</title>
+	<link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+	<link rel="stylesheet" type="text/css" href="fullPage.js/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet/headerdesigh.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet/font.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheet/application.css"> -->
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="fullPage.js/vendors/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="fullPage.js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="javascript/scroll.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/application.js" charset="utf-8"></script>
+  <script src="js/jquery.jpostal.js" charset="utf-8"></script>
+
+</head>
+
+<body style="background-color: #EEE48F; padding-top: 50px;">
+
+<!-- Static NavBar -->
+<nav class="navbar-default navbar-fixed-top">
+	<div class="container">
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    	<span class="icon-bar"></span>
+	  	</button>
+	    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="ロゴ" style="width: 120px;"/></a>
+	  </div>
+	  <div id="navbar" class="navbar-collapse collapse">
+	    <ul class="nav navbar-nav">
+	      <li><a href="index.html">About me</a></li>
+	      <li><a href="index.html#secondPage">Products</a></li>
+	      <li><a href="index.html#3rdPage">Contact</a></li>
+        <li><a href="contact.html">Connect</a></li>
+				<li><a href="http://nnsnodnb.hatenablog.jp" target="new">Blog <i class="fa fa-external-link"></i></a></li>
+	    </ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="https://twitter.com/share?url=http://nnsnodnb.com/&text=nnsnodnb's Portfolio Site @nnsnodnb" target="new">Tweet</a>
+					<script>
+						!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+					</script>
+				</li>
+        <li>
+					<a href="english-portfolio.html">
+						<button type="button" class="btn btn-lg btn-primary btn-xs">&nbsp;&nbsp;English&nbsp;&nbsp;</button>
+					</a>
+				</li>
+      </ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+
+<div id="fullpage">
+	<div class="section" id="section0">
+		<!-- First Page -->
+		<div class="intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 style="color: white;" align="center">お問い合わせ</h1>
+            <h2 align="center">
+              <span style="color: red;">赤字は必須項目</span>です
+            </h2>
+            <div class="well bs-component">
+              <form class="form-horizontal" action="https://nnsnodnb.herokuapp.com/portfolio/sendmail.php" method="post" onclick="check()" name="form_chk">
+                <fieldset>
+                  <div class="form-group">
+                    <label for="inputName" class="col-lg-2 control-label" style="color: red;">名前</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" name="inputName" id="inputName" placeholder="名前" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputKana" class="col-lg-2 control-label" style="color: red;">名前(カナ)</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" name="inputKana" id="inputKana" placeholder="カタカナで入力してください" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPhone" class="col-lg-2 control-label" style="color: red;">電話番号</label>
+                    <div class="col-lg-10">
+                      <input type="tel" class="form-control" name="inputPhone" id="inputPhone" placeholder="電話番号" required style="ime-mode:disabled;">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label" style="color: red;">メールアドレス</label>
+                    <div class="col-lg-10">
+                      <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email" required style="ime-mode:disabled;">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputZipcode" class="col-lg-2 control-label">郵便番号</label>
+                    <div class="col-xs-10 form-inline">
+                      <input type="text" class="form-control" name="inputZipcode" id="inputZipcode" maxlength="8" placeholder="123-4567">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="inputPrefecture" class="col-lg-2 control-label">都道府県</label>
+                    <div class="col-lg-10">
+                      <select class="form-control" name="inputPrefecture" id="inputPrefecture">
+                        <option value="北海道">北海道</option>
+                        <option value="青森県">青森県</option>
+                        <option value="岩手県">岩手県</option>
+                        <option value="宮城県">宮城県</option>
+                        <option value="秋田県">秋田県</option>
+                        <option value="山形県">山形県</option>
+                        <option value="福島県">福島県</option>
+                        <option value="茨城県">茨城県</option>
+                        <option value="栃木県">栃木県</option>
+                        <option value="群馬県">群馬県</option>
+                        <option value="埼玉県">埼玉県</option>
+                        <option value="千葉県">千葉県</option>
+                        <option value="東京都">東京都</option>
+                        <option value="神奈川県">神奈川県</option>
+                        <option value="新潟県">新潟県</option>
+                        <option value="富山県">富山県</option>
+                        <option value="石川県">石川県</option>
+                        <option value="福井県">福井県</option>
+                        <option value="山梨県">山梨県</option>
+                        <option value="長野県">長野県</option>
+                        <option value="岐阜県">岐阜県</option>
+                        <option value="静岡県">静岡県</option>
+                        <option value="愛知県">愛知県</option>
+                        <option value="三重県">三重県</option>
+                        <option value="滋賀県">滋賀県</option>
+                        <option value="京都府">京都府</option>
+                        <option value="大阪府">大阪府</option>
+                        <option value="兵庫県">兵庫県</option>
+                        <option value="奈良県">奈良県</option>
+                        <option value="和歌山県">和歌山県</option>
+                        <option value="鳥取県">鳥取県</option>
+                        <option value="島根県">島根県</option>
+                        <option value="岡山県">岡山県</option>
+                        <option value="広島県">広島県</option>
+                        <option value="山口県">山口県</option>
+                        <option value="徳島県">徳島県</option>
+                        <option value="香川県">香川県</option>
+                        <option value="愛媛県">愛媛県</option>
+                        <option value="高知県">高知県</option>
+                        <option value="福岡県">福岡県</option>
+                        <option value="佐賀県">佐賀県</option>
+                        <option value="長崎県">長崎県</option>
+                        <option value="熊本県">熊本県</option>
+                        <option value="大分県">大分県</option>
+                        <option value="宮崎県">宮崎県</option>
+                        <option value="鹿児島県">鹿児島県</option>
+                        <option value="沖縄県">沖縄県</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputCity" class="col-lg-2 control-label">市町村</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" name="inputCity" id="inputCity" placeholder="市町村">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress" class="col-lg-2 control-label">番地など</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" name="inputAddress" id="inputAddress" placeholder="番地など">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputText" class="col-lg-2 control-label" style="color: red;">お問い合わせ内容</label>
+                    <div class="col-lg-10">
+                      <textarea type="text" rows="10" class="form-control" name="inputText" id="inputText" placeholder="お問い合わせ内容" required></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group" align="right">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <button type="reset" class="btn btn-default">キャンセル</button>
+                      <button type="submit" class="btn btn-primary" onClick="return confirm('この内容で送信してもよろしいですか？')">送信</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+					</div>
+        </div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>
