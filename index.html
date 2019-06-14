@@ -192,5 +192,13 @@
                 <li>Email: <a href="mailto:oka.03_05@me.com">oka.03_05@me.com</a></li>
             </ul>
         </article>
+	    
+	<script>
+        $('a').filter(function() {
+            return $(this).attr('target') == '_blank'
+        }).each(function() {
+            $(this).prop('rel', 'noopener');
+        });
+    </script>
     </body>
 </html>
