@@ -9,5 +9,10 @@
         ]
       }
     ]
+  },
+  "appclips": {
+    "apps": [
+      "moe.nnsnodnb.SSLCertificateCheck.AppClip"
+    ]
   }
 }
