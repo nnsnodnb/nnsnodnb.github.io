@@ -5,7 +5,7 @@
       {
         "appID": "99649YXF6E.moe.nnsnodnb.SSLCertificateCheck",
         "paths": [
-          "/certs-check/*"
+          "/ssl-certificates-check-ios/*"
         ]
       }
     ]
