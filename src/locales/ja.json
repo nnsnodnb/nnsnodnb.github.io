@@ -1,0 +1,103 @@
+{
+    "header": {
+        "fullname": "岡 裕也",
+        "shortCurriculumVitae": "略歴",
+        "reward": "受賞",
+        "sponsorship": "スポンサーシップ",
+        "speaker": "スピーカー",
+        "photosPosted": "写真掲載",
+        "religion": "宗教",
+        "usableTechnology": "使えそうな技術",
+        "developmentRecord": "開発実績",
+        "contact": "連絡先"
+    },
+    "scv": {
+        "born": "1996年生まれ",
+        "bornYearsOld": "歳",
+        "admission1": "2011年 ",
+        "admission2": "宇部工業高等専門学校 経営情報学科",
+        "admission3": "入学",
+        "graduate1": "2016年 ",
+        "graduate2": "宇部工業高等専門学校 経営情報学科",
+        "graduate3": "卒業",
+        "join_stv1": "2016年 ",
+        "join_stv2": "株式会社スマートテックベンチャーズ",
+        "join_stv3": "入社 (同年9月まで株式会社スマートデバイステクノロジー)",
+        "join_zeals1": "2016年 ",
+        "join_zeals2": "株式会社ZEALS",
+        "join_zeals3": "お手伝いで参加",
+        "start_hollyhock_soft": "2016年 Hollyhock Soft (個人事業) 開業",
+        "retire_stv": "2016年12月31日 株式会社スマートテックベンチャーズ 退職",
+        "join_kibousoft1": "2017年1月1日",
+        "join_kibousoft2": "合同会社きぼうソフト",
+        "join_kibousoft3": "入社",
+        "retire_kibousoft": "2018年7月31日 合同会社きぼうソフト 退職",
+        "join_pearch1": "2018年8月1日 ",
+        "join_pearch2": "Pearch株式会社",
+        "join_pearch3": "入社",
+        "retire_pearch": "2020年7月31日 Pearch株式会社 退職",
+        "join_fuller1": "2020年9月1日 ",
+        "join_fuller2": "フラー株式会社",
+        "join_fuller3": "入社",
+        "retire_fuller": "2023年8月31日 フラー株式会社 退職"
+    },
+    "reward": {
+        "fuller_president_award": "フラー株式会社での2021年下半期社長賞"
+    },
+    "sponsorship": {
+        "kosenconf111_title": "高専カンファレンス in 西京",
+        "kosenconf111_amount": "100,000円"
+    },
+    "speaker": {
+        "tr1": "タイトル",
+        "tr2": "スライド",
+        "tr3": "イベント名",
+        "vot_vol2_title": "自社サービスとLINEボットの連携及び新規インストールのアプローチ",
+        "vot_vol2_slide_title": "SpeakerDeck (ja)",
+        "vot_vol2_event_name": "VOT MEETUP! vol.2",
+        "kosen10s_lt12_title": "ヲタクに運動は難しい",
+        "kosen10s_lt12_slide_title": "SpeakerDeck (ja)",
+        "kosen10s_lt12_event_name": "kosen10s LT #12",
+        "other_slides": "他のスライド"
+    },
+    "photosPosted": {
+        "phpcon2019": "PHPカンファレンス2019",
+        "magazines": "雑誌",
+        "phpcon2023": "PHPカンファレンス2023"
+    },
+    "usableTechnology": {
+        "prog_lang": "プログラミング言語",
+        "server_side": "サーバサイド",
+        "client_side": "クライアントサイド",
+        "infra": "インフラ",
+        "other": "その他のスキル"
+    },
+    "developmentRecord": {
+        "tr1": "概要",
+        "tr2": "言語・ツール",
+        "tr3": "備考",
+        "scout_app_title": "人材スカウトアプリ開発",
+        "book_search_app_title": "書籍検索アプリ開発",
+        "ec_system_app_title": "ECシステムのアプリ開発及び保守",
+        "camera_app_title": "カメラシステムを使ったアプリ開発",
+        "corp_communication_app_title": "社内コミュニケーションアプリ開発",
+        "beacon_app_title": "ビーコン連携を使ったアプリ開発",
+        "chatbot_server_infra_title": "チャットボットサービスのサーバサイド及びインフラ",
+        "mobile_backend_title": "モバイルバックエンドサービス",
+        "maidmap_app_title": "メイドカフェ紹介アプリ開発",
+        "ios_notifications_title": "APNSパッケージライブラリ for Django",
+        "django_ajax_csrf_title": "CSRFトークンリクエストヘッダーに追加するパッケージライブラリ for Django",
+        "django_ios_storekit_title": "In-App Purchaseバリデーションサーバパッケージライブラリ for Django",
+        "nowplaying_ios_title": "NowPlaying シェアアプリ",
+        "gourmet_app_title": "飲食店紹介アプリ",
+        "kalyke_apns_title": "APNS Provider APIラッパーライブラリ for Python",
+        "pearch_pipe2_app_title": "Pipe(パイプ) - 投稿いらずでつながる (SNS) すでに終了",
+        "ran_mirare_title": "Mirare(ミラーレ) - 美容サロンの「リピート率」と「来店頻度」の向上を実現！",
+        "multiple_image_view_title": "UIKitでTwitterのような複数画像を表示するライブラリ",
+        "fuller_common_app_title": "common 街の掲示板 ご近所さんとの譲り合い",
+        "fuller_d_eggs_project_title": "D-EGGSプロジェクト メンター",
+        "fuller_uchirepi_app_title": "うちれぴ-おうちのレシピ帳で“がんばらない“ごはん作り",
+        "simple_websocket_client_app_title": "WebSocket クライアント",
+        "certs_check_app_title": "WebサイトのSSL証明書を確認するアプリ"
+    }
+}
