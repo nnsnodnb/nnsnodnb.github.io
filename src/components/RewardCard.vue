@@ -29,9 +29,18 @@ export default {
 </script>
 
 <style scoped>
-.card_container {
-    margin: 1rem auto;
-    width: 85%;
+@media screen and (min-width: 750px) {
+    .card_container {
+        margin: 1rem auto;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .card_container {
+        margin: 1rem auto;
+        width: 100%;
+    }
 }
 
 .card_radius {
