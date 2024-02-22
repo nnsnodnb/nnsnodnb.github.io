@@ -1,7 +1,7 @@
 <template>
     <h2>{{ $t('header.reward') }}</h2>
-    <ul class="container">
-        <div v-for="reward in rewards" :key="reward.url" class="column">
+    <div class="container">
+        <div v-for="(reward, idx) in rewards" :key="reward.url + idx" class="column">
             <a :href="reward.url" target="_blank" rel="noopener">
                 <RewardCard 
                     :title="reward.title"
@@ -10,7 +10,7 @@
                 />
             </a>
         </div>
-    </ul>
+    </div>
 </template>
 
 <script setup>
@@ -40,8 +40,11 @@ a:hover {
     text-decoration: none;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+@media screen and (min-width: 750px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
 }
 </style>
