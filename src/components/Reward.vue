@@ -18,6 +18,8 @@ import RewardCard from './RewardCard.vue'
 </script>
 
 <script>
+import fuller_reward_2021 from "../assets/img/fuller_reward_2021.webp"
+
 export default {
     name: 'Reward',
     data () {
@@ -27,7 +29,7 @@ export default {
                     title: this.$t('reward.fuller_president_award'),
                     description: 'エンジニアとして、自分もチームも挑戦し続けられる土台を作る 〜フラーの「頼られる存在」2021年半期社長賞インタビュー〜 (2022/04/13)',
                     url: 'https://www.wantedly.com/companies/fuller-inc/post_articles/392749',
-                    image_url: 'https://images.wantedly.com/i/MwZbFJx',
+                    image_url: fuller_reward_2021,
                 },
             ],
         }

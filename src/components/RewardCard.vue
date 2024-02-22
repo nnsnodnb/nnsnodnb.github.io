@@ -11,7 +11,7 @@
                 <p class="card_description">{{ description }}</p>
             </div>    
         </article>
-        </div>
+    </div>
 </template>
 
 <script setup>
