@@ -1,0 +1,55 @@
+name: PR Screenshot
+
+on:
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Cache
+      uses: actions/cache@v4
+      with:
+        path: ./node_modules
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-yarn-
+
+    - name: Build
+      run: |
+        yarn
+        yarn build
+
+    - name: Preview
+      uses: JarvusInnovations/background-action@v1.0.5
+      with:
+        run: |
+          yarn preview --host 127.0.0.1 --port 4000 &
+        wait-on: |
+          http://127.0.0.1:4000
+        wait-for: 10s
+
+    - name: Make output directory
+      run: mkdir -p output
+
+    - name: Screenshot
+      uses: karol-brejna-i/webpage-screenshot-action@v1.1.2
+      with:
+        url: http://localhost:4000
+        output: output/screenshot.png
+
+    - name: Upload screenshot
+      uses: actions/upload-pages-artifact@v3
+      with:
+        name: preview
+        path: './screenshot.png'
