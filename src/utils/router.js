@@ -1,21 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import App from '../App.vue'
+import Profile from '../components/Profile.vue'
 import CertsCheck from '../components/CertsCheck.vue'
 
 const routes = [
     {
         path: "/",
-        component: App,
+        component: Profile,
     },
     {
-        path: "/certs-check/",
+        path: "/certs-check",
         component: CertsCheck,
     },
 ]
 
 const router = createRouter({
     history: createWebHistory(),
-    routes: routes,
+    routes,
 })
 
 export default router
