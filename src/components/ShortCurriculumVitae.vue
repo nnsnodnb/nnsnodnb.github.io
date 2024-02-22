@@ -1,20 +1,20 @@
 <template>
     <div>
-        <h2>Short curriculum vitae</h2>
+        <h2>{{ $t('header.shortCurriculumVitae' )}}</h2>
         <ul>
-            <li>I was born in 1996. ({{ yearsOld }} years old)</li>
-            <li>Admission to <code>National Institute of Technology, Ube College(Department of Business Administration)</code> in 2011.</li>
-            <li>Graduated from <code>National Institute of Technology, Ube College</code> in 2016.</li>
-            <li>Joined <code>SmartTech Ventures Co., Ltd.</code>(SmartDeviceTechnologies Co., Ltd. : Until September) in 2016.</li>
-            <li>Joined <code>ZEALS Co., Ltd.</code> as help engineer in 2016.</li>
-            <li>Started Hollyhock Soft (self-employed) in 2016.</li>
-            <li>Retire SmartTech Ventures Co., Ltd. in 31st Dec, 2016</li>
-            <li>Joined <code>Kibousoft LLC.</code> in Jan 1st, 2017.</li>
-            <li>Retire Kibousoft LLC. in 31st Jul, 2018.</li>
-            <li>Joined <code>Pearch Inc.</code> in 1st Aug, 2018.</li>
-            <li>Retire Pearch Inc. in 31st Jul, 2020.</li>
-            <li>Joined <code>Fuller, Inc.</code> in 1st Sep, 2020.</li>
-            <li>Retire Fuller, Inc. in 31st Aug, 2023.</li>
+            <li>{{ $t('scv.born') }} ({{ yearsOld }}{{ $t('scv.bornYearsOld') }})</li>
+            <li>{{ $t('scv.admission1') }} <code>{{ $t('scv.admission2') }}</code> {{ $t('scv.admission3') }}</li>
+            <li>{{ $t('scv.graduate1') }} <code>{{ $t('scv.graduate2') }}</code> {{ $t('scv.graduate3') }}</li>
+            <li>{{ $t('scv.join_stv1') }} <code>{{ $t('scv.join_stv2') }}</code> {{ $t('scv.join_stv3') }}</li>
+            <li>{{ $t('scv.join_zeals1') }} <code>{{ $t('scv.join_zeals2') }}</code> {{ $t('scv.join_zeals3') }}</li>
+            <li>{{ $t('scv.start_hollyhock_soft') }}</li>
+            <li>{{ $t('scv.retire_stv') }}</li>
+            <li>{{ $t('scv.join_kibousoft1') }} <code>{{ $t('scv.join_kibousoft2') }}</code> {{ $t('scv.join_kibousoft3') }}</li>
+            <li>{{ $t('scv.retire_kibousoft') }}</li>
+            <li>{{ $t('scv.join_pearch1') }} <code>{{ $t('scv.join_pearch2') }}</code> {{ $t('scv.join_pearch3') }}</li>
+            <li>{{ $t('scv.retire_pearch') }}</li>
+            <li>{{ $t('scv.join_fuller1') }} <code>{{ $t('scv.join_fuller2') }}</code> {{ $t('scv.join_fuller3') }}</li>
+            <li>{{ $t('scv.retire_fuller') }}</li>
         </ul>
     </div>
 </template>

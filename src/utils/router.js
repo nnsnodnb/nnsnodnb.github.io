@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import App from './App.vue'
-import CertsCheck from './components/CertsCheck.vue'
+import App from '../App.vue'
+import CertsCheck from '../components/CertsCheck.vue'
 
 const routes = [
     {

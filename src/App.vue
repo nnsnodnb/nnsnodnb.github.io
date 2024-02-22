@@ -2,6 +2,7 @@
     <article class="markdown-body">
         <Header />
         <ShortCurriculumVitae />
+        <Reward />
         <Sponcership />
         <Speaker />
         <PhotosPosted />
@@ -15,6 +16,7 @@
 <script setup>
 import Header from './components/Header.vue'
 import ShortCurriculumVitae from './components/ShortCurriculumVitae.vue'
+import Reward from './components/Reward.vue'
 import Sponcership from './components/Sponsorship.vue'
 import Speaker from './components/Speaker.vue'
 import PhotosPosted from './components/PhotosPosted.vue'

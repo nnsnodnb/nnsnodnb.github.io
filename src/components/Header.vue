@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Yuya Oka</h1>
+        <h1>{{ $t("header.fullname") }}</h1>
     </div>
 </template>
 

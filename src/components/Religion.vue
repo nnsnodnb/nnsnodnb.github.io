@@ -1,5 +1,5 @@
 <template>
-    <h2>Religion</h2>
+    <h2>{{ $t('header.religion') }}</h2>
     <ul>
         <li>Python</li>
     </ul>

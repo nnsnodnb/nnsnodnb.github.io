@@ -1,5 +1,5 @@
 <template>
-    <h2>Contact</h2>
+    <h2>{{ $t('header.contact') }}</h2>
     <ul>
         <li v-for="contact in contacts" :key="contact.name">
             {{ contact.name }}:

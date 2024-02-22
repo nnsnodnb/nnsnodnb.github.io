@@ -5,6 +5,8 @@
 </template>
 
 <script setup>
+import CustomBadge from './CustomBadge.vue';
+
 defineProps({
     url: String,
     title: String,
@@ -15,12 +17,8 @@ defineProps({
 </script>
 
 <script>
-import CustomBadge from './CustomBadge.vue';
 
 export default {
     name: 'AnchorCustomBadge',
-    components: {
-        CustomBadge,
-    },
 }
 </script>

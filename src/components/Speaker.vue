@@ -1,10 +1,10 @@
 <template>
-    <h2>Speaker</h2>
+    <h2>{{ $t('header.speaker')}}</h2>
     <table>
         <tr>
-            <th>Title</th>
-            <th>Slide</th>
-            <th>Event name</th>
+            <th>{{ $t('speaker.tr1') }}</th>
+            <th>{{ $t('speaker.tr2') }}</th>
+            <th>{{ $t('speaker.tr3') }}</th>
         </tr>
         <tr v-for="speaker in speakers" :key="speaker.title">
             <td class="speaker-title" v-text="speaker.title"></td>
@@ -13,7 +13,7 @@
         </tr>
     </table>
     <p>
-        <a href="https://speakerdeck.com/nnsnodnb" target="_blank" rel="noopener">Other slides</a>
+        <a href="https://speakerdeck.com/nnsnodnb" target="_blank" rel="noopener">{{ $t('speaker.other_slides') }}</a>
     </p>
 </template>
 
@@ -24,25 +24,25 @@ export default {
         return {
             speakers: [
                 {
-                    title: "Collaboration between provider services and LINE BOT. &\nA new installation approach for smartphone applications.",
+                    title: this.$t('speaker.vot_vol2_title'),
                     slide: {
-                        title: "SpeakerDeck (ja)",
-                        url: "https://speakerdeck.com/nnsnodnb/zi-she-sabisutolinebotutofalselian-xi-ji-bixin-gui-insutorufalseapuroti",
+                        title: this.$t('speaker.vot_vol2_slide_title'),
+                        url: 'https://speakerdeck.com/nnsnodnb/zi-she-sabisutolinebotutofalselian-xi-ji-bixin-gui-insutorufalseapuroti',
                     },
                     event: {
-                        title: "VOT MEETUP! vol.2",
-                        url: "https://vot.connpass.com/event/91497/",
+                        title: this.$t('speaker.vot_vol2_event_name'),
+                        url: 'https://vot.connpass.com/event/91497/',
                     },
                 },
                 {
-                    title: "Exercise is difficult for nerds",
+                    title: this.$t('speaker.kosen10s_lt12_title'),
                     slide: {
-                        title: "SpeakerDeck (ja)",
-                        url: "https://speakerdeck.com/nnsnodnb/wotakuniyun-dong-hanan-sii",
+                        title: 'SpeakerDeck (ja)',
+                        url: 'https://speakerdeck.com/nnsnodnb/wotakuniyun-dong-hanan-sii',
                     },
                     event: {
-                        title: "kosen10s LT #12",
-                        url: "https://kosen10s.connpass.com/event/85849/",
+                        title: this.$t('speaker.kosen10s_lt12_event_name'),
+                        url: 'https://kosen10s.connpass.com/event/85849/',
                     },
                 },
             ],

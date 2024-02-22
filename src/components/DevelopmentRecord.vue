@@ -1,10 +1,10 @@
 <template>
-    <h2>Development record</h2>
+    <h2>{{ $t('header.developmentRecord') }}</h2>
     <table>
         <tr>
-            <th>Overview</th>
-            <th>Languages & Technologies</th>
-            <th>Notes</th>
+            <th class="overview">{{ $t('developmentRecord.tr1') }}</th>
+            <th class="lang_tools">{{ $t('developmentRecord.tr2') }}</th>
+            <th>{{ $t('developmentRecord.tr3') }}</th>
         </tr>
         <tr v-for="record in records" :key="record.overview">
             <td>{{ record.overview }}</td>
@@ -35,62 +35,57 @@
     </table>
 </template>
 
-<script>
+<script setup>
 import AnchorCustomBadge from './AnchorCustomBadge.vue'
 import AppStoreBadge from './AppStoreBadge.vue'
 import CustomBadge from './CustomBadge.vue'
 import GitHubStar from './GitHubStar.vue'
 import PyPIPackageBadge from './PyPIPackageBadge.vue'
+</script>
 
+<script>
 export default {
     name: 'DevelopmentRecord',
-    components: {
-        AnchorCustomBadge,
-        AppStoreBadge,
-        CustomBadge,
-        GitHubStar,
-        PyPIPackageBadge,
-    },
     data () {
         return {
             records: [
                 {
-                    "overview": "Corporate scout application",
+                    "overview": this.$t('developmentRecord.scout_app_title'),
                     "techs": ["Objective-C"],
                     "notes": [],
                 },
                 {
-                    "overview": "Book browsing application",
+                    "overview": this.$t('developmentRecord.book_search_app_title'),
                     "techs": ["Swift"],
                     "notes": [],
                 },
                 {
-                    "overview": "EC system application",
+                    "overview": this.$t('developmentRecord.ec_system_app_title'),
                     "techs": ["Objective-C"],
                     "notes": [],
                 },
                 {
-                    "overview": "Camera system application",
+                    "overview": this.$t('developmentRecord.camera_app_title'),
                     "techs": ["Swift"],
                     "notes": [],
                 },
                 {
-                    "overview": "Social communication application",
+                    "overview": this.$t('developmentRecord.corp_communication_app_title'),
                     "techs": ["Objective-C", "CoreData"],
                     "notes": [],
                 },
                 {
-                    "overview": "Beacon incorporation application",
+                    "overview": this.$t('developmentRecord.beacon_app_title'),
                     "techs": ["Swift", "Firebase"],
                     "notes": [],
                 },
                 {
-                    "overview": "Chatbot service & infra",
+                    "overview": this.$t('developmentRecord.chatbot_server_infra_title'),
                     "techs": ["Python", "Django", "Azure"],
                     "notes": [],
                 },
                 {
-                    "overview": "Mobile backend service",
+                    "overview": this.$t('developmentRecord.mobile_backend_title'),
                     "techs": ["Python", "Django"],
                     "notes": [
                         {
@@ -103,12 +98,12 @@ export default {
                     ],
                 },
                 {
-                    "overview": "Shop review application",
+                    "overview": this.$t('developmentRecord.maidmap_app_title'),
                     "techs": ["Swift", "Python", "Django"],
                     "notes": [],
                 },
                 {
-                    "overview": "iOS Push Notification Service package library for Django",
+                    "overview": this.$t('developmentRecord.ios_notifications_title'),
                     "techs": ["Python2", "Python3", "Django"],
                     "notes": [
                         {
@@ -135,7 +130,7 @@ export default {
                     ],
                 },
                 {
-                    "overview": "Adding csrf token for ajax request header for Django",
+                    "overview": this.$t('developmentRecord.django_ajax_csrf_title'),
                     "techs": ["Python2", "Python3", "Django"],
                     "notes": [
                         {
@@ -162,7 +157,7 @@ export default {
                     ],
                 },
                 {
-                    "overview": "In-App Purchage validation server package library for Django",
+                    "overview": this.$t('developmentRecord.django_ios_storekit_title'),
                     "techs": ["Python3", "Django"],
                     "notes": [
                         {
@@ -189,7 +184,7 @@ export default {
                     ],
                 },
                 {
-                    "overview": "NowPlaying share application",
+                    "overview": this.$t('developmentRecord.nowplaying_ios_title'),
                     "techs": ["Swift", "Firebase", "Twitter API", "Mastodon API"],
                     "notes": [
                         {
@@ -208,12 +203,12 @@ export default {
                     ],
                 },
                 {
-                    "overview": "Gourmet application",
+                    "overview": this.$t('developmentRecord.gourmet_app_title'),
                     "techs": ["Swift", "Objective-C"],
                     "notes": [],
                 },
                 {
-                    "overview": "APNS Provider API wrapper library for Python",
+                    "overview": this.$t('developmentRecord.kalyke_apns_title'),
                     "techs": ["Python3"],
                     "notes": [
                         {
@@ -240,7 +235,7 @@ export default {
                     ],
                 },
                 {
-                    "overview": "Pipe(パイプ) - 投稿いらずでつながる (SNS) already closed.",
+                    "overview": this.$t('developmentRecord.pearch_pipe2_app_title'),
                     "techs": ["Swift", "Firebase", "AWS", "Python3", "Django", "Flask", "Celery"],
                     "notes": [
                         {
@@ -260,7 +255,7 @@ export default {
                     ],
                 },
                 {
-                    "overview": "Mirare(ミラーレ) - 美容サロンの「リピート率」と「来店頻度」の向上を実現！",
+                    "overview": this.$t('developmentRecord.ran_mirare_title'),
                     "techs": ["Swift", "Firebase", "Python3", "Django", "Celery", "Docker", "AWS", "AWS CloudFormation and so on"],
                     "notes": [
                         {
@@ -281,7 +276,7 @@ export default {
                     ],
                 },
                 {
-                    "overview": "Displaying multiple images like Twitter by UIKit",
+                    "overview": this.$t('developmentRecord.multiple_image_view_title'),
                     "techs": ["iOS", "Swift", "CocoaPods", "Carthage", "Swift Package Manager"],
                     "notes": [
                         {
@@ -294,7 +289,7 @@ export default {
                     ],
                 },
                 {
-                    "overview": "common for iOS",
+                    "overview": this.$t('developmentRecord.fuller_common_app_title'),
                     "techs": ["iOS", "Swift", "Firebase", "Bitrise", "CircleCI", "GitHub Actions", "fastlane", "CocoaPods"],
                     "notes": [
                         {
@@ -313,18 +308,49 @@ export default {
                                 "alt": "Official Web Site",
                             },
                         },
+                    ],
+                },
+                {
+                    "overview": this.$t('developmentRecord.fuller_d_eggs_project_title'),
+                    "techs": ["iOS", "Swift", "SwiftUI", "Firebase", "fastlane", "Swift Package Manager"],
+                    "notes": [
                         {
-                            "type": "anchor",
+                            "type": "anchor-custom-badge",
                             "data": {
-                                "url": "https://www.wantedly.com/companies/fuller-inc/post_articles/392749",
-                                "title": "President's Award",
+                                "url": "https://www.fuller-inc.com/news/2021/11/d-eggs-final",
+                                "title": "Web",
+                                "value": "News",
+                                "color": "FFE255",
+                                "alt": "Fuller news page",
                             },
                         },
                     ],
                 },
                 {
-                    "overview": "WebSocket client for iOS",
-                    "techs": ["iOS", "Swift", "SwiftUI", "CoreData", "GitHub Actions", "Composable Architecture", "fastlane", "Swift Package Manager"],
+                    "overview": this.$t('developmentRecord.fuller_uchirepi_app_title'),
+                    "techs": ["iOS", "Swift", "Firebase", "Bitrise", "fastlane", "CocoaPods"],
+                    "notes": [
+                        {
+                            "type": "app-store",
+                            "data": {
+                                "app_id": "1614948412",
+                            },
+                        },
+                        {
+                            "type": "anchor-custom-badge",
+                            "data": {
+                                "url": "https://uchirepi.app/",
+                                "title": "Web",
+                                "value": "Official",
+                                "color": "E77D5E",
+                                "alt": "Official Web Site",
+                            },
+                        },
+                    ],
+                },
+                {
+                    "overview": this.$t('developmentRecord.simple_websocket_client_app_title'),
+                    "techs": ["iOS", "Swift", "SwiftUI", "CoreData", "GitHub Actions", "The Composable Architecture", "fastlane", "Swift Package Manager"],
                     "notes": [
                         {
                             "type": "app-store",
@@ -342,8 +368,8 @@ export default {
                     ],
                 },
                 {
-                    "overview": "CertsCheck for iOS",
-                    "techs": ["iOS", "Swift", "SwiftUI", "GitHub Actions", "Composable Architecture", "fastlane", "Swift Package Manager"],
+                    "overview": this.$t('developmentRecord.certs_check_app_title'),
+                    "techs": ["iOS", "Swift", "SwiftUI", "GitHub Actions", "The Composable Architecture", "fastlane", "Swift Package Manager"],
                     "notes": [
                         {
                             "type": "app-store",
@@ -370,3 +396,13 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+.overview {
+    width: 320px;
+}
+
+.lang_tools {
+    width: 360px;
+}
+</style>

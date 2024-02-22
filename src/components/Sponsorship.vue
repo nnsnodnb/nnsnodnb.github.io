@@ -1,8 +1,13 @@
 <template>
-    <h2>Sponsorship</h2>
+    <h2>{{ $t('header.sponsorship') }}</h2>
     <ul>
         <li v-for="sponsorship in sponsorships" :key="sponsorship.url">
-            <a :href="sponsorship.url" target="_blank" rel="noopener">{{ sponsorship.name }}</a> ({{ sponsorship.amount }})
+            <span v-if="sponsorship.url !== null">
+                <a :href="sponsorship.url" target="_blank" rel="noopener">{{ sponsorship.name }}</a> ({{ sponsorship.amount }})
+            </span>
+            <span v-else>
+                {{ sponsorship.name }} ({{ sponsorship.amount }})
+            </span>
         </li>
     </ul>
 </template>
@@ -14,9 +19,9 @@ export default {
         return {
             sponsorships: [
                 {
-                    name: 'Kosen Conference in SAIKYO',
+                    name: this.$t('sponsorship.kosenconf111_title'),
                     url: 'https://kosenconf111.github.io',
-                    amount: '100 thousand yen',
+                    amount: this.$t('sponsorship.kosenconf111_amount'),
                 },
             ],
         }
