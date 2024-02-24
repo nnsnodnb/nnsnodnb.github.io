@@ -5,6 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <title>404 Not Found | nnsnodnb's Profile</title>
+        <script>
+            (function (l) {
+                if (l.pathname.endsWith('.html')) {
+                    return
+                }
+                const subFolders = [
+                    '/certs-check',
+                ]
+                const matchFolder = subFolders.find(f => l.pathname.startsWith(f))
+                if (matchFolder) {
+                    l.replace(`${matchFolder}/`)
+                }
+            })(window.location)
+        </script>
     </head>
 
     <body>
