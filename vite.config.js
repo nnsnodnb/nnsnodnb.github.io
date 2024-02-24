@@ -9,7 +9,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                certs_check: resolve(__dirname, 'certs-check//index.html'),
+                certs_check: resolve(__dirname, 'certs-check/index.html'),
             }
         },
     },
