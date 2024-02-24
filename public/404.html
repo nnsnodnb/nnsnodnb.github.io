@@ -13,7 +13,7 @@
                 const subFolders = [
                     '/certs-check',
                 ]
-                const matchFolder = subFolders.find(f => l.pathname.startsWith(f))
+                const matchFolder = subFolders.find(f => f === l.pathname )
                 if (matchFolder) {
                     l.replace(`${matchFolder}/`)
                 }
