@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <a href="https://apps.apple.com/app/certscheck/id6469147491?mt=8" target="_blank" rel="noopener">
+        <a href="https://apps.apple.com/app/certscheck/id6469147491?mt=8" target="_blank" rel="noopener" class="bigger">
             <div class="card">
                 <img :src="certs_check_appicon" alt="CertsCheck App Icon" class="app_icon">
             </div>
@@ -29,6 +29,22 @@ export default {
     justify-content: center;
     align-items: center;
     overflow: clip;
+}
+
+a {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+a.bigger:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 .card {
