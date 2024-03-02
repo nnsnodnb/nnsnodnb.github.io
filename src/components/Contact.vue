@@ -78,8 +78,8 @@ export default {
                     details: [
                         {
                             "text": null,
-                            "anchor": "nnsnodnb@gmail.com",
-                            "url": "mailto:nnsnodnb@gmail.com",
+                            "anchor": "me@nnsnodnb.moe",
+                            "url": "mailto:me@nnsnodnb.moe",
                         },
                     ],
                 },
