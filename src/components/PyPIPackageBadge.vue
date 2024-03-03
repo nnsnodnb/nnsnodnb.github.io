@@ -1,8 +1,12 @@
 <template>
-    <a :href="href" target="_blank" rel="noopener"><img :src="image_url"></a>
+    <NewTabAnchor :url="href">
+        <img :src="image_url">
+    </NewTabAnchor>
 </template>
 
 <script setup>
+import NewTabAnchor from './NewTabAnchor.vue'
+
 defineProps({
     type: String,
     package: String,

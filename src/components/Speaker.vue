@@ -8,14 +8,28 @@
         </tr>
         <tr v-for="speaker in speakers" :key="speaker.title">
             <td class="speaker-title" v-text="speaker.title"></td>
-            <td><a :href="speaker.slide.url" target="_blank" rel="noopener">{{ speaker.slide.title }}</a></td>
-            <td><a :href="speaker.event.url" target="_blank" rel="noopener">{{ speaker.event.title }}</a></td>
+            <td>
+                <NewTabAnchor :url="speaker.slide.url">
+                    {{ speaker.slide.title }}
+                </NewTabAnchor>
+            </td>
+            <td>
+                <NewTabAnchor :url="speaker.event.url">
+                    {{ speaker.event.title }}
+                </NewTabAnchor>
+            </td>
         </tr>
     </table>
     <p>
-        <a href="https://speakerdeck.com/nnsnodnb" target="_blank" rel="noopener">{{ $t('speaker.other_slides') }}</a>
+        <NewTabAnchor url="https://speakerdeck.com/nnsnodnb">
+            {{ $t('speaker.other_slides') }}
+        </NewTabAnchor>
     </p>
 </template>
+
+<script setup>
+import NewTabAnchor from './NewTabAnchor.vue'
+</script>
 
 <script>
 export default {

@@ -1,16 +1,22 @@
 <template>
     <h2>{{ $t('header.contact') }}</h2>
     <ul>
-        <li v-for="contact in contacts" :key="contact.name">
+        <li v-for="(contact, index) in contacts" :key="index">
             {{ contact.name }}:
-            <span v-for="(detail, index) in contact.details" :key="detail.url">
+            <span v-for="(detail, index) in contact.details" :key="detail.index">
                 <span v-if="detail.text !== null">{{ detail.text }}: </span>
-                <a :href="detail.url" target="_blank" rel="noopener">{{ detail.anchor }}</a>
+                <NewTabAnchor :href="detail.url">
+                    {{ detail.anchor }}
+                </NewTabAnchor>
                 <span v-if="index < contact.details.length">&nbsp;</span>
             </span>
         </li>
     </ul>
 </template>
+
+<script setup>
+import NewTabAnchor from './NewTabAnchor.vue'
+</script>
 
 <script>
 export default {

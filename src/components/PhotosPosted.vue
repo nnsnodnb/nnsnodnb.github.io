@@ -5,12 +5,18 @@
             {{ photo.title }}
             <ul>
                 <li v-for="item in photo.items" :key="item.url">
-                    <a :href="item.url" target="_blank" rel="noopener">{{ item.title }}</a>
+                    <NewTabAnchor :url="item.url">
+                        {{ item.title }}
+                    </NewTabAnchor>
                 </li>
             </ul>
         </li>
     </ul>
 </template>
+
+<script setup>
+import NewTabAnchor from './NewTabAnchor.vue'
+</script>
 
 <script>
 export default {

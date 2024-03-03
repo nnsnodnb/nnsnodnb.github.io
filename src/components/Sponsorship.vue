@@ -3,7 +3,9 @@
     <ul>
         <li v-for="sponsorship in sponsorships" :key="sponsorship.url">
             <span v-if="sponsorship.url !== null">
-                <a :href="sponsorship.url" target="_blank" rel="noopener">{{ sponsorship.name }}</a> ({{ sponsorship.amount }})
+                <NewTabAnchor :url="sponsorship.url">
+                    {{ sponsorship.name }}
+                </NewTabAnchor>
             </span>
             <span v-else>
                 {{ sponsorship.name }} ({{ sponsorship.amount }})
@@ -11,6 +13,10 @@
         </li>
     </ul>
 </template>
+
+<script setup>
+import NewTabAnchor from './NewTabAnchor.vue'
+</script>
 
 <script>
 export default {

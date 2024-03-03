@@ -12,7 +12,9 @@
             <td>
                 <div v-for="note in record.notes">
                     <span v-if="note.type === 'anchor'">
-                        <a :href="note.data.url" target="_blank" rel="noopener">{{ note.data.title }}</a>
+                        <NewTabAnchor :url="note.data.url">
+                            {{ note.data.title }}
+                        </NewTabAnchor>
                     </span>
                     <span v-else-if="note.type === 'anchor-custom-badge'">
                         <AnchorCustomBadge :url="note.data.url" :title="note.data.title" :value="note.data.value" :color="note.data.color"/>
@@ -40,6 +42,7 @@ import AnchorCustomBadge from './AnchorCustomBadge.vue'
 import AppStoreBadge from './AppStoreBadge.vue'
 import CustomBadge from './CustomBadge.vue'
 import GitHubStar from './GitHubStar.vue'
+import NewTabAnchor from './NewTabAnchor.vue'
 import PyPIPackageBadge from './PyPIPackageBadge.vue'
 </script>
 

@@ -1,11 +1,12 @@
 <template>
-    <a :href="url" target="_blank" rel="noopener">
+    <NewTabAnchor :url="url">
         <CustomBadge :title="title" :value="value" :color="color"/>
-    </a>
+    </NewTabAnchor>
 </template>
 
 <script setup>
-import CustomBadge from './CustomBadge.vue';
+import CustomBadge from './CustomBadge.vue'
+import NewTabAnchor from './NewTabAnchor.vue'
 
 defineProps({
     url: String,
