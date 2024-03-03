@@ -1,12 +1,16 @@
 <template>
     <div class="container">
-        <a href="https://apps.apple.com/app/certscheck/id6469147491?mt=8" target="_blank" rel="noopener" class="bigger">
+        <NewTabAnchor url="https://apps.apple.com/app/certscheck/id6469147491?mt=8" class="bigger">
             <div class="card">
                 <img :src="certs_check_appicon" alt="CertsCheck App Icon" class="app_icon">
             </div>
-        </a>
+        </NewTabAnchor>
     </div>
 </template>
+
+<script setup>
+import NewTabAnchor from './NewTabAnchor.vue'
+</script>
 
 <script>
 import certs_check_appicon from '../assets/img/certs_check_appicon.webp'

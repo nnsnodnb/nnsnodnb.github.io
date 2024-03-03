@@ -1,10 +1,12 @@
 <template>
-    <a :href="href" target="_blank" rel="noopener">
+    <NewTabAnchor :url="href">
         <img :src="image_url" alt="App Store">
-    </a>
+    </NewTabAnchor>
 </template>
 
 <script setup>
+import NewTabAnchor from './NewTabAnchor.vue'
+
 defineProps({
     app_id: String,
 })

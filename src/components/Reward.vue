@@ -2,18 +2,19 @@
     <h2>{{ $t('header.reward') }}</h2>
     <div class="container">
         <div v-for="(reward, idx) in rewards" :key="reward.url + idx" class="column">
-            <a :href="reward.url" target="_blank" rel="noopener">
+            <NewTabAnchor :url="reward.url">
                 <RewardCard 
                     :title="reward.title"
                     :description="reward.description"
                     :image_url="reward.image_url"
                 />
-            </a>
+            </NewTabAnchor>
         </div>
     </div>
 </template>
 
 <script setup>
+import NewTabAnchor from './NewTabAnchor.vue'
 import RewardCard from './RewardCard.vue'
 </script>
 
