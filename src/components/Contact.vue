@@ -70,6 +70,16 @@ export default {
                     ],
                 },
                 {
+                    name: "Zenn",
+                    details: [
+                        {
+                            "text": null,
+                            "anchor": "nnsnodnb",
+                            "url": "https://zenn.dev/nnsnodnb",
+                        },
+                    ],
+                },
+                {
                     name: "Blog",
                     details: [
                         {
