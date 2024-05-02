@@ -39,7 +39,10 @@
         "join_fuller1": "Joined",
         "join_fuller2": "Fuller, Inc.",
         "join_fuller3": "in 1st Sep, 2020.",
-        "retire_fuller": "Retire Fuller, Inc. in 31st Aug, 2023."
+        "retire_fuller": "Retire Fuller, Inc. in 31st Aug, 2023.",
+        "join_zenproducts1": "Joined",
+        "join_zenproducts2": "ZenProducts Inc.",
+        "join_zenproducts3": "in 1st May, 2024."
     },
     "reward": {
         "fuller_president_award": "Fuller, Inc. President Award second half of 2021"
