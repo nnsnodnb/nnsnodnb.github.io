@@ -15,6 +15,7 @@
             <li>{{ $t('scv.retire_pearch') }}</li>
             <li>{{ $t('scv.join_fuller1') }} <code>{{ $t('scv.join_fuller2') }}</code> {{ $t('scv.join_fuller3') }}</li>
             <li>{{ $t('scv.retire_fuller') }}</li>
+            <li>{{ $t('scv.join_zenproducts1') }} <code>{{ $t('scv.join_zenproducts2') }}</code> {{ $t('scv.join_zenproducts3') }}</li>
         </ul>
     </div>
 </template>
