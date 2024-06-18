@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "github-markdown-css": "5.5.1",
+    "github-markdown-css": "5.6.1",
     "vue": "^3.4.19",
     "vue-i18n": "9.13.1"
   },
