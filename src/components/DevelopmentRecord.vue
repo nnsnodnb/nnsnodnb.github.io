@@ -10,7 +10,7 @@
             <td>{{ record.overview }}</td>
             <td>{{ joinedString(record.techs, ', ') }}</td>
             <td>
-                <div v-for="note in record.notes">
+                <div v-for="(note, index) in record.notes" :key="index">
                     <span v-if="note.type === 'anchor'">
                         <NewTabAnchor :url="note.data.url">
                             {{ note.data.title }}
@@ -385,6 +385,33 @@ export default {
                             "data": {
                                 "user": "nnsnodnb",
                                 "repo": "ssl-certificates-check-ios",
+                            },
+                        },
+                    ],
+                },
+                {
+                    "overview": this.$t('developmentRecord.app_store_download_count_badge_maker_title'),
+                    "techs": ["Python3", "GitHub Actions"],
+                    "notes": [
+                        {
+                            "type": "pypi",
+                            "data": {
+                                "type": "version",
+                                "package": "app-store-download-count-badge-maker",
+                            },
+                        },
+                        {
+                            "type": "pypi",
+                            "data": {
+                                "type": "download",
+                                "package": "app-store-download-count-badge-maker",
+                            },
+                        },
+                        {
+                            "type": "github-star",
+                            "data": {
+                                "user": "nnsnodnb",
+                                "repo": "app-store-download-count-badge-maker",
                             },
                         },
                     ],
