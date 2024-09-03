@@ -101,6 +101,7 @@
         "fuller_d_eggs_project_title": "D-EGGSプロジェクト メンター",
         "fuller_uchirepi_app_title": "うちれぴ-おうちのレシピ帳で“がんばらない“ごはん作り",
         "simple_websocket_client_app_title": "WebSocket クライアント",
-        "certs_check_app_title": "WebサイトのSSL証明書を確認するアプリ"
+        "certs_check_app_title": "WebサイトのSSL証明書を確認するアプリ",
+        "app_store_download_count_badge_maker_title": "App Storeでのダウンロード数バッジ生成CLI"
     }
 }
