@@ -193,7 +193,7 @@ export default {
                         {
                             "type": "app-store",
                             "data": {
-                                "app_id": "6448638174",
+                                "app_id": "1289764391",
                             },
                         },
                         {
