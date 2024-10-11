@@ -38,6 +38,7 @@ export default {
                         "Swift",
                         "Objective-C",
                         "SwiftUI",
+                        "Vue.js",
                     ]
                 },
                 {
