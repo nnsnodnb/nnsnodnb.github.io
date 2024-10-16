@@ -18,7 +18,7 @@ export default {
     name: 'PyPIPackageBadge',
     data () {
         return {
-            href: "https://pypi.python.org/pypi/" + this.package,
+            href: "https://pypi.python.org/project/" + this.package,
         }
     },
     computed: {
