@@ -352,6 +352,33 @@ export default {
                     ],
                 },
                 {
+                    "overview": this.$t('developmentRecord.gs_reminder_title'),
+                    "techs": ["Python3", "GitHub API", "GitHub Actions"],
+                    "notes": [
+                        {
+                            "type": "pypi",
+                            "data": {
+                                "type": "version",
+                                "package": "gs-reminder",
+                            },
+                        },
+                        {
+                            "type": "pypi",
+                            "data": {
+                                "type": "download",
+                                "package": "gs-reminder",
+                            },
+                        },
+                        {
+                            "type": "github-star",
+                            "data": {
+                                "user": "nnsnodnb",
+                                "repo": "gs-reminder",
+                            },
+                        },
+                    ],
+                },
+                {
                     "overview": this.$t('developmentRecord.simple_websocket_client_app_title'),
                     "techs": ["iOS", "Swift", "SwiftUI", "CoreData", "GitHub Actions", "The Composable Architecture", "fastlane", "Swift Package Manager"],
                     "notes": [

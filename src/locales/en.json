@@ -102,6 +102,7 @@
         "fuller_common_app_title": "common for iOS",
         "fuller_d_eggs_project_title": "D-EGGS Project mentor",
         "fuller_uchirepi_app_title": "Uchirepi for iOS",
+        "gs_reminder_title": "Notify Slack of a review of Pull Requests in GitHub repository",
         "simple_websocket_client_app_title": "Simple WebSocket Client for iOS",
         "certs_check_app_title": "Check SSL certificates for web sites for iOS",
         "app_store_download_count_badge_maker_title": "A command-line tool to create badges displaying the number of app downloads from App Store"
