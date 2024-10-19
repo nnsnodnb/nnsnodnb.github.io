@@ -20,7 +20,10 @@
                         <AnchorCustomBadge :url="note.data.url" :title="note.data.title" :value="note.data.value" :color="note.data.color"/>
                     </span>
                     <span v-else-if="note.type === 'app-store'">
-                        <AppStoreBadge :app_id="note.data.app_id"/>
+                        <AppStoreBadge :app_id="note.data.app_id" type="appstore"/>
+                    </span>
+                    <span v-else-if="note.type === 'app-store-download-count'">
+                        <AppStoreBadge :app_id="note.data.app_id" type="download-count"/>
                     </span>
                     <span v-else-if="note.type === 'custom-badge'">
                         <CustomBadge :title="note.data.title" :value="note.data.value" :color="note.data.color"/>
@@ -192,6 +195,12 @@ export default {
                     "notes": [
                         {
                             "type": "app-store",
+                            "data": {
+                                "app_id": "1289764391",
+                            },
+                        },
+                        {
+                            "type": "app-store-download-count",
                             "data": {
                                 "app_id": "1289764391",
                             },
@@ -389,6 +398,12 @@ export default {
                             },
                         },
                         {
+                            "type": "app-store-download-count",
+                            "data": {
+                                "app_id": "6448638174",
+                            },
+                        },
+                        {
                             "type": "github-star",
                             "data": {
                                 "user": "nnsnodnb",
@@ -403,6 +418,12 @@ export default {
                     "notes": [
                         {
                             "type": "app-store",
+                            "data": {
+                                "app_id": "6469147491",
+                            },
+                        },
+                        {
+                            "type": "app-store-download-count",
                             "data": {
                                 "app_id": "6469147491",
                             },
