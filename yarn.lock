@@ -1504,10 +1504,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"github-markdown-css@npm:5.8.0":
-  version: 5.8.0
-  resolution: "github-markdown-css@npm:5.8.0"
-  checksum: 10c0/bbdd8ac475314ce9baeb44df43d438db11e3a31f54f76c85c1ea639f254781a7bbd62ae753d942cd71ad4268b11ed40df5a8ac0fe163add7fbd90614a0eb1b5e
+"github-markdown-css@npm:5.8.1":
+  version: 5.8.1
+  resolution: "github-markdown-css@npm:5.8.1"
+  checksum: 10c0/67d3540731f9f1fc3b903362ef270e6db0ffe252fd4998a1a8777fc63b288b1904e5e57703e74a2ee04f1d613a4732b1949cb472b66a3c2e9e2b7a1750d1f0a6
   languageName: node
   linkType: hard
 
@@ -1972,7 +1972,7 @@ __metadata:
   dependencies:
     "@vitejs/plugin-vue": "npm:5.2.1"
     "@vitejs/plugin-vue-jsx": "npm:4.1.0"
-    github-markdown-css: "npm:5.8.0"
+    github-markdown-css: "npm:5.8.1"
     vite: "npm:^5.1.4"
     vue: "npm:^3.4.19"
     vue-i18n: "npm:10.0.5"
