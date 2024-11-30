@@ -835,17 +835,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-vue-jsx@npm:4.1.0":
-  version: 4.1.0
-  resolution: "@vitejs/plugin-vue-jsx@npm:4.1.0"
+"@vitejs/plugin-vue-jsx@npm:4.1.1":
+  version: 4.1.1
+  resolution: "@vitejs/plugin-vue-jsx@npm:4.1.1"
   dependencies:
     "@babel/core": "npm:^7.26.0"
     "@babel/plugin-transform-typescript": "npm:^7.25.9"
     "@vue/babel-plugin-jsx": "npm:^1.2.5"
   peerDependencies:
-    vite: ^5.0.0
+    vite: ^5.0.0 || ^6.0.0
     vue: ^3.0.0
-  checksum: 10c0/de1fa4d589e2936b22e851e1e2f222d3a65181ea4f5e1f90363ff45637e99f9c6054a8ebb3f6cc723815e7f1f1559c0921e5958670f539595ecbefd3fcf4b456
+  checksum: 10c0/09bb9adb546672ba596df4a9c987e013ded783d829b9061c3a81094266986242edf21405a9d58f410d06fd2f0f9b4d82afedd50903d6d87a61ad54a350d54661
   languageName: node
   linkType: hard
 
@@ -1971,7 +1971,7 @@ __metadata:
   resolution: "portfolio@workspace:."
   dependencies:
     "@vitejs/plugin-vue": "npm:5.2.1"
-    "@vitejs/plugin-vue-jsx": "npm:4.1.0"
+    "@vitejs/plugin-vue-jsx": "npm:4.1.1"
     github-markdown-css: "npm:5.8.1"
     vite: "npm:^5.1.4"
     vue: "npm:^3.4.19"
