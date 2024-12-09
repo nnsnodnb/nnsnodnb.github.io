@@ -38,6 +38,17 @@ export default {
         return {
             speakers: [
                 {
+                    title: this.$t('speaker.chiba_swift_2_title'),
+                    slide: {
+                        title: this.$t('speaker.chiba_swift_2_slide_title'),
+                        url: 'https://speakerdeck.com/nnsnodnb/static-linux-sdk-woshi-tuta-linux-apurikai-fa-woshi-meyou',
+                    },
+                    event: {
+                        title: this.$t('speaker.chiba_swift_2_event_name'),
+                        url: 'https://chibaswift.connpass.com/event/331925/',
+                    },
+                },
+                {
                     title: this.$t('speaker.vot_vol2_title'),
                     slide: {
                         title: this.$t('speaker.vot_vol2_slide_title'),
