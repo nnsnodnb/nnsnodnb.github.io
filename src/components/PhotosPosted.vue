@@ -55,6 +55,15 @@ export default {
                         },
                     ],
                 },
+                {
+                    "title": this.$t('photosPosted.phpcon2024'),
+                    "items": [
+                        {
+                            "title": "Google Photos",
+                            "url": "https://photos.app.goo.gl/qKiFHnGUQKJgaU68A",
+                        }
+                    ]
+                }
             ],
         }
     },
