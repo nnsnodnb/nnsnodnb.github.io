@@ -61,9 +61,9 @@ export default {
                         {
                             "title": "Google Photos",
                             "url": "https://photos.app.goo.gl/qKiFHnGUQKJgaU68A",
-                        }
-                    ]
-                }
+                        },
+                    ],
+                },
             ],
         }
     },
