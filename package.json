@@ -18,5 +18,5 @@
     "@vitejs/plugin-vue-jsx": "4.1.2",
     "vite": "^6.0.0"
   },
-  "packageManager": "yarn@4.8.0"
+  "packageManager": "yarn@4.9.0"
 }
