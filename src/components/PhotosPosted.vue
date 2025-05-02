@@ -64,6 +64,15 @@ export default {
                         },
                     ],
                 },
+                {
+                    "title": this.$t('photosPosted.phpcon_odawara2025'),
+                    "items": [
+                        {
+                            "title": "https://note.com/phpcon_odawara/n/n0c78b00d78d6",
+                            "url": "https://note.com/phpcon_odawara/n/n0c78b00d78d6",
+                        },
+                    ],
+                },
             ],
         }
     },
