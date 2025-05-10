@@ -14,5 +14,10 @@
     "apps": [
       "99649YXF6E.moe.nnsnodnb.SSLCertificateCheck.AppClip"
     ]
+  },
+  "webcredentials": {
+    "apps": [
+      "99649YXF6E.moe.nnsnodnb.Sample"
+    ]
   }
 }
