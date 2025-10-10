@@ -1,24 +1,28 @@
 <template>
     <h2>{{ $t('header.speaker')}}</h2>
     <table>
-        <tr>
-            <th>{{ $t('speaker.tr1') }}</th>
-            <th>{{ $t('speaker.tr2') }}</th>
-            <th>{{ $t('speaker.tr3') }}</th>
-        </tr>
-        <tr v-for="speaker in speakers" :key="speaker.title">
-            <td class="speaker-title" v-text="speaker.title"></td>
-            <td>
-                <NewTabAnchor :url="speaker.slide.url">
-                    {{ speaker.slide.title }}
-                </NewTabAnchor>
-            </td>
-            <td>
-                <NewTabAnchor :url="speaker.event.url">
-                    {{ speaker.event.title }}
-                </NewTabAnchor>
-            </td>
-        </tr>
+        <thead>
+            <tr>
+                <th>{{ $t('speaker.tr1') }}</th>
+                <th>{{ $t('speaker.tr2') }}</th>
+                <th>{{ $t('speaker.tr3') }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="speaker in speakers" :key="speaker.title">
+                <td class="speaker-title" v-text="speaker.title"></td>
+                <td>
+                    <NewTabAnchor :url="speaker.slide.url">
+                        {{ speaker.slide.title }}
+                    </NewTabAnchor>
+                </td>
+                <td>
+                    <NewTabAnchor :url="speaker.event.url">
+                        {{ speaker.event.title }}
+                    </NewTabAnchor>
+                </td>
+            </tr>
+        </tbody>
     </table>
     <p>
         <NewTabAnchor url="https://speakerdeck.com/nnsnodnb">

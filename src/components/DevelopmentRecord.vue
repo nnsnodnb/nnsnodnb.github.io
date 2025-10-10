@@ -1,42 +1,46 @@
 <template>
     <h2>{{ $t('header.developmentRecord') }}</h2>
     <table>
-        <tr>
-            <th class="overview">{{ $t('developmentRecord.tr1') }}</th>
-            <th class="lang_tools">{{ $t('developmentRecord.tr2') }}</th>
-            <th>{{ $t('developmentRecord.tr3') }}</th>
-        </tr>
-        <tr v-for="record in records" :key="record.overview">
-            <td>{{ record.overview }}</td>
-            <td>{{ joinedString(record.techs, ', ') }}</td>
-            <td>
-                <div v-for="(note, index) in record.notes" :key="index">
-                    <span v-if="note.type === 'anchor'">
-                        <NewTabAnchor :url="note.data.url">
-                            {{ note.data.title }}
-                        </NewTabAnchor>
-                    </span>
-                    <span v-else-if="note.type === 'anchor-custom-badge'">
-                        <AnchorCustomBadge :url="note.data.url" :title="note.data.title" :value="note.data.value" :color="note.data.color"/>
-                    </span>
-                    <span v-else-if="note.type === 'app-store'">
-                        <AppStoreBadge :app_id="note.data.app_id" type="appstore"/>
-                    </span>
-                    <span v-else-if="note.type === 'app-store-download-count'">
-                        <AppStoreBadge :app_id="note.data.app_id" type="download-count"/>
-                    </span>
-                    <span v-else-if="note.type === 'custom-badge'">
-                        <CustomBadge :title="note.data.title" :value="note.data.value" :color="note.data.color"/>
-                    </span>
-                    <span v-else-if="note.type === 'github-star'">
-                        <GitHubStar :user="note.data.user" :repo="note.data.repo"/>
-                    </span>
-                    <span v-else-if="note.type === 'pypi'">
-                        <PyPIPackageBadge :type="note.data.type" :package="note.data.package"/>
-                    </span>
-                </div>
-            </td>
-        </tr>
+        <thead>
+            <tr>
+                <th class="overview">{{ $t('developmentRecord.tr1') }}</th>
+                <th class="lang_tools">{{ $t('developmentRecord.tr2') }}</th>
+                <th>{{ $t('developmentRecord.tr3') }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="record in records" :key="record.overview">
+                <td>{{ record.overview }}</td>
+                <td>{{ joinedString(record.techs, ', ') }}</td>
+                <td>
+                    <div v-for="(note, index) in record.notes" :key="index">
+                        <span v-if="note.type === 'anchor'">
+                            <NewTabAnchor :url="note.data.url">
+                                {{ note.data.title }}
+                            </NewTabAnchor>
+                        </span>
+                        <span v-else-if="note.type === 'anchor-custom-badge'">
+                            <AnchorCustomBadge :url="note.data.url" :title="note.data.title" :value="note.data.value" :color="note.data.color"/>
+                        </span>
+                        <span v-else-if="note.type === 'app-store'">
+                            <AppStoreBadge :app_id="note.data.app_id" type="appstore"/>
+                        </span>
+                        <span v-else-if="note.type === 'app-store-download-count'">
+                            <AppStoreBadge :app_id="note.data.app_id" type="download-count"/>
+                        </span>
+                        <span v-else-if="note.type === 'custom-badge'">
+                            <CustomBadge :title="note.data.title" :value="note.data.value" :color="note.data.color"/>
+                        </span>
+                        <span v-else-if="note.type === 'github-star'">
+                            <GitHubStar :user="note.data.user" :repo="note.data.repo"/>
+                        </span>
+                        <span v-else-if="note.type === 'pypi'">
+                            <PyPIPackageBadge :type="note.data.type" :package="note.data.package"/>
+                        </span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
     </table>
 </template>
 
