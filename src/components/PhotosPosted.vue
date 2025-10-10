@@ -71,6 +71,10 @@ export default {
                             "title": "https://note.com/phpcon_odawara/n/n0c78b00d78d6",
                             "url": "https://note.com/phpcon_odawara/n/n0c78b00d78d6",
                         },
+                        {
+                            "title": "Google Photos",
+                            "url": "https://photos.app.goo.gl/LxTKY68cPYv6NS9K8",
+                        },
                     ],
                 },
             ],
