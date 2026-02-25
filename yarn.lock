@@ -1238,6 +1238,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"buefy@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "buefy@npm:3.0.4"
+  dependencies:
+    bulma: "npm:^1.0.4"
+  peerDependencies:
+    vue: ^3.0.0
+  checksum: 10c0/2477095c737b48262ab3c8f50c2d879e37ce4ff7a67086f3c4cb2dc9a12bc54c85a2f0c8f94141b9b50517ccacd0773cf6896d87335b47f5eb21dfe62f8f813c
+  languageName: node
+  linkType: hard
+
+"bulma@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "bulma@npm:1.0.4"
+  checksum: 10c0/5a9bf48c6681181fce6fe06d1744272938cc81d4356314d9c4eee3ddbd1fac6ac678cb640b2fe58aec47f907ff273231b246b9cd66d1894b40c3a89a68fb3a68
+  languageName: node
+  linkType: hard
+
 "cacache@npm:^18.0.0":
   version: 18.0.2
   resolution: "cacache@npm:18.0.2"
@@ -2011,6 +2029,7 @@ __metadata:
   dependencies:
     "@vitejs/plugin-vue": "npm:6.0.3"
     "@vitejs/plugin-vue-jsx": "npm:5.1.3"
+    buefy: "npm:^3.0.4"
     github-markdown-css: "npm:5.8.1"
     vite: "npm:^7.0.0"
     vue: "npm:^3.4.19"
