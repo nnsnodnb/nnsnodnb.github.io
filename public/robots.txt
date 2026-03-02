@@ -1,6 +1,7 @@
 User-agent: *
 Disallow: /certs-check/
 Disallow: /commercial-law/
+Disallow: /userdata-external-transmission/
 
 User-agent: Google-adstxt
 Disallow:

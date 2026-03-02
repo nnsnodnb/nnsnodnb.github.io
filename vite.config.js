@@ -11,6 +11,7 @@ export default defineConfig({
                 main: resolve(__dirname, 'index.html'),
                 certs_check: resolve(__dirname, 'certs-check/index.html'),
                 commercial_law: resolve(__dirname, 'commercial-law/index.html'),
+                userdata_external_transmission: resolve(__dirname, 'userdata-external-transmission/index.html'),
             }
         },
     },
