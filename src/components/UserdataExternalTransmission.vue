@@ -53,6 +53,12 @@ const AVAILABLE_BUNDLE_IDS = {
             EXTERNAL_PROVIDERS.google,
         ],
     },
+    "moe.nnsnodnb.NowPlaying": {
+        providers: [
+            EXTERNAL_PROVIDERS.apple,
+            EXTERNAL_PROVIDERS.google,
+        ],
+    },
 }
 
 export default {
