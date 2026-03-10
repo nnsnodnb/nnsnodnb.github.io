@@ -12,7 +12,7 @@
     "buefy": "^3.0.4",
     "github-markdown-css": "5.9.0",
     "vue": "^3.5.29",
-    "vue-i18n": "11.2.8"
+    "vue-i18n": "11.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "6.0.4",
