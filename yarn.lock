@@ -810,9 +810,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-vue-jsx@npm:5.1.5":
-  version: 5.1.5
-  resolution: "@vitejs/plugin-vue-jsx@npm:5.1.5"
+"@vitejs/plugin-vue-jsx@npm:5.1.4":
+  version: 5.1.4
+  resolution: "@vitejs/plugin-vue-jsx@npm:5.1.4"
   dependencies:
     "@babel/core": "npm:^7.29.0"
     "@babel/plugin-syntax-typescript": "npm:^7.28.6"
@@ -820,9 +820,9 @@ __metadata:
     "@rolldown/pluginutils": "npm:^1.0.0-rc.2"
     "@vue/babel-plugin-jsx": "npm:^2.0.1"
   peerDependencies:
-    vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
+    vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
     vue: ^3.0.0
-  checksum: 10c0/7995e2b93a6242fafcee3d5b01b3b54be93c1e12363a5dd78bd760507ee8c7737003f0e63208c1d5f954a661bf2a5f37ca9ec895c5965ddb6a151c1f57537be9
+  checksum: 10c0/79cba4489faf7c07b3c751ef183197276310c30dd66a8a0ff914581ecc9da39cd1c13f55677eb7a467365cc74d1856b377bebdfe04e775299c9e021546954f1a
   languageName: node
   linkType: hard
 
@@ -1982,7 +1982,7 @@ __metadata:
   resolution: "portfolio@workspace:."
   dependencies:
     "@vitejs/plugin-vue": "npm:6.0.4"
-    "@vitejs/plugin-vue-jsx": "npm:5.1.5"
+    "@vitejs/plugin-vue-jsx": "npm:5.1.4"
     buefy: "npm:^3.0.4"
     github-markdown-css: "npm:5.9.0"
     vite: "npm:^8.0.0"
