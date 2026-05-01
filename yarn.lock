@@ -1325,13 +1325,13 @@ __metadata:
   linkType: hard
 
 "buefy@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "buefy@npm:3.0.4"
+  version: 3.0.5
+  resolution: "buefy@npm:3.0.5"
   dependencies:
     bulma: "npm:^1.0.4"
   peerDependencies:
     vue: ^3.0.0
-  checksum: 10c0/2477095c737b48262ab3c8f50c2d879e37ce4ff7a67086f3c4cb2dc9a12bc54c85a2f0c8f94141b9b50517ccacd0773cf6896d87335b47f5eb21dfe62f8f813c
+  checksum: 10c0/d79fde4bd33d7292412a629d67251e453aa7a3fb1f03127e2b38a409a55572d71033dc5d9e4189652294b2605dd6e369136634f7ce55ab49c26ca241a52d6623
   languageName: node
   linkType: hard
 
