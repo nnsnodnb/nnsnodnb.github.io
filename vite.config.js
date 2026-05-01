@@ -6,6 +6,7 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
     plugins: [vue()],
     build: {
+        cssMinify: 'esbuild',
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
