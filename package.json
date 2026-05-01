@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "buefy": "^3.0.4",
+    "esbuild": "^0.28.0",
     "github-markdown-css": "5.9.0",
     "vue": "^3.5.29",
     "vue-i18n": "11.4.0"
