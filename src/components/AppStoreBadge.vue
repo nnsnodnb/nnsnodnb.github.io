@@ -11,6 +11,11 @@ import NewTabAnchor from './NewTabAnchor.vue'
 defineProps({
     app_id: String,
     type: String,
+    locale: {
+        type: String,
+        required: true,
+        default: 'en',
+    },
 })
 </script>
 
@@ -19,7 +24,7 @@ export default {
     name: 'AppStoreBadge',
     data () {
         return {
-            href: "https://apps.apple.com/us/app/id" + this.app_id + "?mt=8",
+            href: `https://apps.apple.com/${this.locale}/app/id${this.app_id}?mt=8`,
             appstore_image_url: "https://img.shields.io/itunes/v/" + this.app_id + "?logo=appstore&label=AppStore",
             download_count_badge_image_url: "https://nnsnodnb.moe/self-app-store-download-count-badges/" + this.app_id + "-year.svg"
         }
