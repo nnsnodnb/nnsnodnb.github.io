@@ -72,7 +72,8 @@
         "magazines": "Magazines",
         "phpcon2023": "PHP Conference Japan 2023",
         "phpcon2024": "PHP Conference Japan 2024",
-        "phpcon_odawara2025": "PHP Conference Odawara 2025"
+        "phpcon_odawara2025": "PHP Conference Odawara 2025",
+        "phpcon_odawara2026": "PHP Conference Odawara 2026"
     },
     "usableTechnology": {
         "prog_lang": "Programming languages",

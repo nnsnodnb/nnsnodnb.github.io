@@ -68,12 +68,25 @@ export default {
                     "title": this.$t('photosPosted.phpcon_odawara2025'),
                     "items": [
                         {
-                            "title": "https://note.com/phpcon_odawara/n/n0c78b00d78d6",
-                            "url": "https://note.com/phpcon_odawara/n/n0c78b00d78d6",
+                            "title": "みんなで白熱！ぺちおだ大合戦を運営がふりかえる",
+                            "url": "https://blog.phpcon-odawara.jp/entry/n/n0c78b00d78d6",
                         },
                         {
                             "title": "Google Photos",
                             "url": "https://photos.app.goo.gl/LxTKY68cPYv6NS9K8",
+                        },
+                    ],
+                },
+                {
+                    "title": this.$t('photosPosted.phpcon_odawara2026'),
+                    "items": [
+                        {
+                            "title": "PHPカンファレンス小田原2026 を開催しました【2027年も開催🎉】 #phpcon_odawara",
+                            "url": "https://blog.phpcon-odawara.jp/entry/2026/05/16/102632",
+                        },
+                        {
+                            "title": "Google Photos",
+                            "url": "https://photos.app.goo.gl/U7zPJsYAuJ7mNyZRA",
                         },
                     ],
                 },
