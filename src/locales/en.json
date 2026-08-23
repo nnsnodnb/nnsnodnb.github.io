@@ -110,6 +110,7 @@
         "gs_reminder_title": "Notify Slack of a review of Pull Requests in GitHub repository",
         "simple_websocket_client_app_title": "Simple WebSocket Client for iOS",
         "certs_check_app_title": "Check SSL certificates for web sites for iOS",
-        "app_store_download_count_badge_maker_title": "A command-line tool to create badges displaying the number of app downloads from App Store"
+        "app_store_download_count_badge_maker_title": "A command-line tool to create badges displaying the number of app downloads from App Store",
+        "vapor_cursor_pagination_title": "Cursor pagination for Vapor's Fluent"
     }
 }

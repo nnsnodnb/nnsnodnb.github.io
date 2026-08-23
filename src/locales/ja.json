@@ -110,6 +110,7 @@
         "gs_reminder_title": "GitHubリポジトリのPull Requestのレビュー依頼をSlackに通知するCLI",
         "simple_websocket_client_app_title": "WebSocket クライアント",
         "certs_check_app_title": "WebサイトのSSL証明書を確認するアプリ",
-        "app_store_download_count_badge_maker_title": "App Storeでのダウンロード数バッジ生成CLI"
+        "app_store_download_count_badge_maker_title": "App Storeでのダウンロード数バッジ生成CLI",
+        "vapor_cursor_pagination_title": "VaporのFluentで使用するカーソルページネーションライブラリ"
     }
 }

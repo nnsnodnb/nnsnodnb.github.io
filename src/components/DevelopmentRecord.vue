@@ -37,6 +37,9 @@
                         <span v-else-if="note.type === 'pypi'">
                             <PyPIPackageBadge :type="note.data.type" :package="note.data.package"/>
                         </span>
+                        <span v-else-if="note.type === 'swift-package-index'">
+                            <SwiftPackageIndex :username="note.data.username" :package_name="note.data.package_name"/>
+                        </span>
                     </div>
                 </td>
             </tr>
@@ -51,6 +54,7 @@ import CustomBadge from './CustomBadge.vue'
 import GitHubStar from './GitHubStar.vue'
 import NewTabAnchor from './NewTabAnchor.vue'
 import PyPIPackageBadge from './PyPIPackageBadge.vue'
+import SwiftPackageIndex from './SwiftPackageIndex.vue'
 </script>
 
 <script>
@@ -466,6 +470,26 @@ export default {
                             data: {
                                 user: "nnsnodnb",
                                 repo: "app-store-download-count-badge-maker",
+                            },
+                        },
+                    ],
+                },
+                {
+                    overview: this.$t('developmentRecord.vapor_cursor_pagination_title'),
+                    techs: ["Swift", "Vapor", "Fluent"],
+                    notes: [
+                        {
+                            type: "swift-package-index",
+                            data: {
+                                username: "nnsnodnb",
+                                package_name: "vapor-cursor-pagination",
+                            },
+                        },
+                        {
+                            type: "github-star",
+                            data: {
+                                user: "nnsnodnb",
+                                repo: "vapor-cursor-pagination",
                             },
                         },
                     ],
