@@ -24,10 +24,10 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      uses: actions/checkout@v7.0.1
 
     - name: Restore cache
-      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      uses: actions/cache@v6.1.0
       with:
         path: ./node_modules
         key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
@@ -53,7 +53,7 @@ jobs:
         echo ::endgroup::
 
     - name: Upload artifact
-      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+      uses: actions/upload-artifact@v7.0.2
       with:
         name: github-pages
         path: ${{ runner.temp }}/artifact.tar
@@ -74,8 +74,8 @@ jobs:
 
     steps:
     - name: Setup Pages
-      uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
+      uses: actions/configure-pages@v6.0.0
 
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+      uses: actions/deploy-pages@v5.0.1
