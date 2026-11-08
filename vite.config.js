@@ -1,20 +1,16 @@
-import { resolve } from 'path'
 import { defineConfig } from 'vite'
+import { fileURLToPath, URL } from 'node:url'
 import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [vue()],
-    build: {
-        cssMinify: 'esbuild',
-        rollupOptions: {
-            input: {
-                main: resolve(__dirname, 'index.html'),
-                certs_check: resolve(__dirname, 'certs-check/index.html'),
-                commercial_law: resolve(__dirname, 'commercial-law/index.html'),
-                userdata_external_transmission: resolve(__dirname, 'userdata-external-transmission/index.html'),
-            }
-        },
+  plugins: [vue()],
+  build: {
+    cssMinify: 'esbuild',
+  },
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
-    appType: 'mpa',
+  }
 })
