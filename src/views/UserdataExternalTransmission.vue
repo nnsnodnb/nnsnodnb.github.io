@@ -27,6 +27,7 @@
 </template>
 
 <script setup>
+import { BNotification } from 'buefy'
 import { onMounted, ref } from 'vue'
 
 const EXTERNAL_PROVIDERS = {
